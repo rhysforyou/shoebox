@@ -1,36 +1,7 @@
 // @flow
 import React from 'react'
 import styled from 'styled-components'
-import BookmarkList from './BookmarkList'
-
-const BOOKMARKS = [
-  {
-    title: 'styled-components',
-    description:
-      '**Visual primitives for the component age.**\n\nUse the best bits of ES6 and CSS to style your apps without stress 💅',
-    url: 'https://www.styled-components.com/',
-    image: 'https://www.styled-components.com/static/atom.png'
-  },
-  {
-    title: 'chjj/marked',
-    description: 'marked - A markdown parser and compiler. Built for speed.',
-    url: 'https://github.com/chjj/marked',
-    image: 'https://avatars2.githubusercontent.com/u/470564?v=3&s=400'
-  },
-  {
-    title: 'Jest · 🃏 Delightful JavaScript Testing',
-    description: '🃏 Delightful JavaScript Testing',
-    url: 'https://facebook.github.io/jest/index.html',
-    image: 'https://facebook.github.io/jest/img/opengraph.png'
-  },
-  {
-    title: 'Atom • A hackable text editor for the 21st Century',
-    description:
-      'At GitHub, we’re building the text editor we’ve always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can’t wait to see what you build with it.',
-    url: 'https://atom.io/',
-    image: 'http://og.github.com/atom-mark/atom-mark@1200x630.png'
-  }
-]
+import AllBookmarks from '../containers/AllBookmarks'
 
 const Container = styled.div`
   max-width: 48rem;
@@ -80,10 +51,12 @@ const Button = styled.a`
 const App = () =>
   <Container>
     <Header>
-      <Title><Logo role="img" aria-label="logo">📥</Logo> Shoebox</Title>
+      <Title>
+        <Logo><span role="img" aria-label="logo">📥</span></Logo> Shoebox
+      </Title>
       <Button href="/add">Add Bookmark</Button>
     </Header>
-    <BookmarkList bookmarks={BOOKMARKS} />
+    <AllBookmarks />
   </Container>
 
 export default App

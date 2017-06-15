@@ -9,6 +9,7 @@ const Container = styled.div`
 
 type Props = {
   bookmarks: Array<{
+    id: string,
     title: string,
     description: string,
     url: string,
@@ -18,9 +19,9 @@ type Props = {
 
 const BookmarkList = ({ bookmarks }: Props) =>
   <Container>
-    {bookmarks.map(({ title, description, url, image }) =>
+    {bookmarks.map(({ id, title, description, url, image }) =>
       <Bookmark
-        key={url}
+        key={id}
         title={title}
         description={description}
         url={url}

@@ -1,0 +1,8 @@
+// @flow
+import type { State as BookmarksState } from './bookmarks'
+
+export type State = {
+  entities: {
+    bookmarks: BookmarksState
+  }
+}

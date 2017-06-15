@@ -62,7 +62,7 @@ type Props = {
   image?: string
 }
 
-const BookmarkList = ({ title, description, url, image }: Props) =>
+const Bookmark = ({ title, description, url, image }: Props) =>
   <LinkedContainer href={url}>
     {image && <Thumbnail src={image} />}
     <div>
@@ -71,4 +71,4 @@ const BookmarkList = ({ title, description, url, image }: Props) =>
     </div>
   </LinkedContainer>
 
-export default BookmarkList
+export default Bookmark
