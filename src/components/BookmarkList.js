@@ -1,3 +1,4 @@
+// @flow
 import React from 'react'
 import styled from 'styled-components'
 import Bookmark from './Bookmark'
@@ -6,7 +7,16 @@ const Container = styled.div`
   padding: 1rem 0;
 `
 
-const BookmarkList = ({ bookmarks }) =>
+type Props = {
+  bookmarks: Array<{
+    title: string,
+    description: string,
+    url: string,
+    image?: string
+  }>
+}
+
+const BookmarkList = ({ bookmarks }: Props) =>
   <Container>
     {bookmarks.map(({ title, description, url, image }) =>
       <Bookmark

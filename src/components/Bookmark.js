@@ -1,3 +1,4 @@
+// @flow
 import React from 'react'
 import styled from 'styled-components'
 import marked from 'marked'
@@ -54,7 +55,14 @@ const Description = styled.div`
   }
 `
 
-const BookmarkList = ({ title, description, url, image }) =>
+type Props = {
+  title: string,
+  description: string,
+  url: string,
+  image?: string
+}
+
+const BookmarkList = ({ title, description, url, image }: Props) =>
   <LinkedContainer href={url}>
     {image && <Thumbnail src={image} />}
     <div>
