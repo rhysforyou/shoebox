@@ -34,6 +34,7 @@ storiesOf('Button', module)
 storiesOf('Bookmark', module)
   .add('with image', () =>
     <Bookmark
+      site="An Example Website"
       title="An Example Bookmark"
       description="This is an example of what a bookmrk with an image might look like"
       url="https://facebook.github.io/react"
@@ -42,6 +43,7 @@ storiesOf('Bookmark', module)
   )
   .add('without image', () =>
     <Bookmark
+      site="An Example Website"
       title="An Example Bookmark"
       description="This is an example of what a bookmrk without an image might look like"
       url="https://facebook.github.io/react"
@@ -49,6 +51,7 @@ storiesOf('Bookmark', module)
   )
   .add('with Markdown content', () =>
     <Bookmark
+      site="An Example Website"
       title="An Example Bookmark"
       description={
         'Bookmark descriptions can be provided as **Markdown**, and the component should _properly_ format them.\n\nThis includes paragraph breaks\n\n- Lists\n- of\n- Items\n\nand\n\n1. Numbered\n2. Lists\n\nand [Links](/)'

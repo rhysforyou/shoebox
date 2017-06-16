@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Bookmark with Markdown content 1`] = `
+<a
+  className="sc-bdVaJa jnTnQX"
+  href="https://facebook.github.io/react"
+>
+  <img
+    className="sc-ifAKCX jrTFsk"
+    src="https://facebook.github.io/react/img/logo_og.png"
+  />
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <h2
+      className="sc-htpNat eyraDA"
+    >
+      An Example Bookmark
+    </h2>
+    <span
+      className="sc-bxivhb dNmQiw"
+    >
+      An Example Website
+    </span>
+    <div
+      className="sc-EHOje cZVPQR"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>Bookmark descriptions can be provided as <strong>Markdown</strong>, and the component should <em>properly</em> format them.</p>
+        <p>This includes paragraph breaks</p>
+        <ul>
+        <li>Lists</li>
+        <li>of</li>
+        <li>Items</li>
+        </ul>
+        <p>and</p>
+        <ol>
+        <li>Numbered</li>
+        <li>Lists</li>
+        </ol>
+        <p>and <a href=\\"/\\">Links</a></p>
+        ",
+        }
+      }
+    />
+  </div>
+</a>
+`;
+
+exports[`Storyshots Bookmark with image 1`] = `
+<a
+  className="sc-bdVaJa jnTnQX"
+  href="https://facebook.github.io/react"
+>
+  <img
+    className="sc-ifAKCX jrTFsk"
+    src="https://facebook.github.io/react/img/logo_og.png"
+  />
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <h2
+      className="sc-htpNat eyraDA"
+    >
+      An Example Bookmark
+    </h2>
+    <span
+      className="sc-bxivhb dNmQiw"
+    >
+      An Example Website
+    </span>
+    <div
+      className="sc-EHOje cZVPQR"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>This is an example of what a bookmrk with an image might look like</p>
+        ",
+        }
+      }
+    />
+  </div>
+</a>
+`;
+
+exports[`Storyshots Bookmark without image 1`] = `
+<a
+  className="sc-bdVaJa jnTnQX"
+  href="https://facebook.github.io/react"
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <h2
+      className="sc-htpNat eyraDA"
+    >
+      An Example Bookmark
+    </h2>
+    <span
+      className="sc-bxivhb dNmQiw"
+    >
+      An Example Website
+    </span>
+    <div
+      className="sc-EHOje cZVPQR"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>This is an example of what a bookmrk without an image might look like</p>
+        ",
+        }
+      }
+    />
+  </div>
+</a>
+`;
+
+exports[`Storyshots Button with the default style 1`] = `
+<a
+  className="sc-bZQynM gmWGQV"
+  href="#"
+>
+  Button
+</a>
+`;
+
+exports[`Storyshots Button with the primary style 1`] = `
+<a
+  className="sc-bZQynM hGOGJu"
+  href="#"
+>
+  Button
+</a>
+`;
+
+exports[`Storyshots Header with a child component 1`] = `
+<header
+  className="sc-gzVnrw ptRQv"
+>
+  <h1
+    className="sc-htoDjs khvZMX"
+  >
+    <span
+      className="sc-dnqmqq qIXwl"
+    >
+      <span
+        aria-label="logo"
+        role="img"
+      >
+        📥
+      </span>
+    </span>
+     Shoebox
+  </h1>
+  <a
+    className="sc-bZQynM gmWGQV"
+    href="/add"
+  >
+    Add Bookmark
+  </a>
+</header>
+`;
+
+exports[`Storyshots Header with default content 1`] = `
+<header
+  className="sc-gzVnrw ptRQv"
+>
+  <h1
+    className="sc-htoDjs khvZMX"
+  >
+    <span
+      className="sc-dnqmqq qIXwl"
+    >
+      <span
+        aria-label="logo"
+        role="img"
+      >
+        📥
+      </span>
+    </span>
+     Shoebox
+  </h1>
+</header>
+`;

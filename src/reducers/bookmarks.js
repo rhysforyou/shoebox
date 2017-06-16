@@ -1,16 +1,17 @@
 // @flow
-import uuid from 'uuid'
+import uuid from 'uuid';
 
-import type { Action } from '../actions/types'
+import type { Action } from '../actions/types';
 
 export type Bookmark = {
   id: string,
+  site?: string,
   title: string,
   url: string,
   description: string,
   image?: string
-}
-export type State = { [id: string]: Bookmark }
+};
+export type State = { [id: string]: Bookmark };
 
 const BOOKMARKS: State = [
   {
@@ -23,6 +24,7 @@ const BOOKMARKS: State = [
   },
   {
     id: uuid.v4(),
+    site: 'GitHub',
     title: 'chjj/marked',
     description: 'marked - A markdown parser and compiler. Built for speed.',
     url: 'https://github.com/chjj/marked',
@@ -37,7 +39,8 @@ const BOOKMARKS: State = [
   },
   {
     id: uuid.v4(),
-    title: 'Atom · A hackable text editor for the 21st Century',
+    site: 'Atom',
+    title: 'A hackable text editor for the 21st Century',
     description:
       'At GitHub, we’re building the text editor we’ve always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can’t wait to see what you build with it.',
     url: 'https://atom.io/',
@@ -45,7 +48,8 @@ const BOOKMARKS: State = [
   },
   {
     id: uuid.v4(),
-    title: 'In Conversation with ‘WipEout’ Composer CoLD SToRAGE · Waypoint',
+    site: 'Waypoint',
+    title: 'In Conversation with ‘WipEout’ Composer CoLD SToRAGE',
     description:
       "Tim Wright's music remains a vital part of the sci-fi racer's legacy—we discuss that, and his career beyond it.",
     url:
@@ -56,10 +60,10 @@ const BOOKMARKS: State = [
 ].reduce(
   (state: State, bookmark: Bookmark) => ({ ...state, [bookmark.id]: bookmark }),
   {}
-)
+);
 
 function bookmarks(state: State = BOOKMARKS, action: Action): State {
-  return state
+  return state;
 }
 
-export default bookmarks
+export default bookmarks;

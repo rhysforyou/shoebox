@@ -24,13 +24,25 @@ const LinkedContainer = styled.a`
   }
 `
 
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 const Title = styled.h2`
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 0 0 1rem;
+  margin: 0;
   display: inline-block;
   color: #4990E2;
-  text-decoration: none;
+`
+
+const SiteName = styled.span`
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+  display: inline-block;
+  color: #999;
 `
 
 const Thumbnail = styled.img`
@@ -45,6 +57,7 @@ const Thumbnail = styled.img`
 
 const Description = styled.div`
   color: #999;
+  margin-top: 1rem;
 
   p {
     margin: 0 0 1rem;
@@ -56,19 +69,21 @@ const Description = styled.div`
 `
 
 type Props = {
+  site?: string,
   title: string,
   description: string,
   url: string,
   image?: string
 }
 
-const Bookmark = ({ title, description, url, image }: Props) =>
+const Bookmark = ({ site, title, description, url, image }: Props) =>
   <LinkedContainer href={url}>
     {image && <Thumbnail src={image} />}
-    <div>
+    <Content>
       <Title>{title}</Title>
+      {site && <SiteName>{site}</SiteName>}
       <Description dangerouslySetInnerHTML={{ __html: marked(description) }} />
-    </div>
+    </Content>
   </LinkedContainer>
 
 export default Bookmark
