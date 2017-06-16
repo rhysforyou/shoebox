@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Bookmark with Markdown content 1`] = `
+<a
+  className="sc-bdVaJa jnTnQX"
+  href="https://facebook.github.io/react"
+>
+  <img
+    className="sc-htpNat TfoMQ"
+    src="https://facebook.github.io/react/img/logo_og.png"
+  />
+  <div>
+    <h2
+      className="sc-bwzfXH hxcOVp"
+    >
+      An Example Bookmark
+    </h2>
+    <div
+      className="sc-bxivhb ttUgM"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>Bookmark descriptions can be provided as <strong>Markdown</strong>, and the component should <em>properly</em> format them.</p>
+        <p>This includes paragraph breaks</p>
+        <ul>
+        <li>Lists</li>
+        <li>of</li>
+        <li>Items</li>
+        </ul>
+        <p>and</p>
+        <ol>
+        <li>Numbered</li>
+        <li>Lists</li>
+        </ol>
+        <p>and <a href=\\"/\\">Links</a></p>
+        ",
+        }
+      }
+    />
+  </div>
+</a>
+`;
+
+exports[`Storyshots Bookmark with image 1`] = `
+<a
+  className="sc-bdVaJa jnTnQX"
+  href="https://facebook.github.io/react"
+>
+  <img
+    className="sc-htpNat TfoMQ"
+    src="https://facebook.github.io/react/img/logo_og.png"
+  />
+  <div>
+    <h2
+      className="sc-bwzfXH hxcOVp"
+    >
+      An Example Bookmark
+    </h2>
+    <div
+      className="sc-bxivhb ttUgM"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>This is an example of what a bookmrk with an image might look like</p>
+        ",
+        }
+      }
+    />
+  </div>
+</a>
+`;
+
+exports[`Storyshots Bookmark without image 1`] = `
+<a
+  className="sc-bdVaJa jnTnQX"
+  href="https://facebook.github.io/react"
+>
+  <div>
+    <h2
+      className="sc-bwzfXH hxcOVp"
+    >
+      An Example Bookmark
+    </h2>
+    <div
+      className="sc-bxivhb ttUgM"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>This is an example of what a bookmrk without an image might look like</p>
+        ",
+        }
+      }
+    />
+  </div>
+</a>
+`;
+
+exports[`Storyshots Header default 1`] = `
+<header
+  className="sc-ifAKCX jhytRW"
+>
+  <h1
+    className="sc-EHOje fNiger"
+  >
+    <span
+      className="sc-bZQynM lhlPzc"
+    >
+      <span
+        aria-label="logo"
+        role="img"
+      >
+        📥
+      </span>
+    </span>
+     Shoebox
+  </h1>
+  <a
+    className="sc-gzVnrw fEkQTb"
+    href="/add"
+  >
+    Add Bookmark
+  </a>
+</header>
+`;
+
+exports[`Storyshots Welcome to Storybook 1`] = `
+<div
+  style={
+    Object {
+      "fontFamily": "\\"Helvetica Neue\\", Helvetica, \\"Segoe UI\\", Arial, freesans, sans-serif",
+      "lineHeight": 1.4,
+      "margin": 15,
+      "maxWidth": 600,
+    }
+  }
+>
+  <h1>
+    Welcome to STORYBOOK
+  </h1>
+  <p>
+    This is a UI component dev environment for your app.
+  </p>
+  <p>
+    We've added some basic stories inside the
+     
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      src/stories
+    </code>
+     
+    directory.
+    <br />
+    A story is a single state of one or more UI components. You can have as many stories as you want.
+    <br />
+    (Basically a story is like a visual test case.)
+  </p>
+  <p>
+    See these sample
+     
+    <a
+      onClick={[Function]}
+      role="button"
+      style={
+        Object {
+          "borderBottom": "1px solid #1474f3",
+          "color": "#1474f3",
+          "paddingBottom": 2,
+          "textDecoration": "none",
+        }
+      }
+      tabIndex="0"
+    >
+      stories
+    </a>
+     
+    for a component called
+     
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      Button
+    </code>
+    .
+  </p>
+  <p>
+    Just like that, you can add your own components as stories.
+    <br />
+    You can also edit those components and see changes right away.
+    <br />
+    (Try editing the 
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      Button
+    </code>
+     component located at 
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      src/stories/Button.js
+    </code>
+    .)
+  </p>
+  <p>
+    This is just one thing you can do with Storybook.
+    <br />
+    Have a look at the
+     
+    <a
+      href="https://storybook.js.org/basics/writing-stories"
+      rel="noopener noreferrer"
+      style={
+        Object {
+          "borderBottom": "1px solid #1474f3",
+          "color": "#1474f3",
+          "paddingBottom": 2,
+          "textDecoration": "none",
+        }
+      }
+      target="_blank"
+    >
+      Storybook
+    </a>
+     
+    repo for more information.
+  </p>
+  <p
+    style={
+      Object {
+        "opacity": 0.5,
+      }
+    }
+  >
+    <b>
+      NOTE:
+    </b>
+    <br />
+    Have a look at the
+     
+    <code
+      style={
+        Object {
+          "backgroundColor": "#f3f2f2",
+          "border": "1px solid #eae9e9",
+          "borderRadius": 4,
+          "color": "#3a3a3a",
+          "fontSize": 15,
+          "fontWeight": 600,
+          "padding": "2px 5px",
+        }
+      }
+    >
+      .storybook/webpack.config.js
+    </code>
+     
+    to add webpack loaders and plugins you are using in this project.
+  </p>
+</div>
+`;
