@@ -1,5 +1,6 @@
 // @flow
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Container = styled.header`
@@ -14,9 +15,12 @@ const Container = styled.header`
   }
 `
 
-const Title = styled.h1`
+const TitleLink = styled(Link)`
+  font-size: 2rem;
   font-weight: 800;
   vertical-align: middle;
+  color: black;
+  text-decoration: none;
 `
 
 const Logo = styled.span`
@@ -27,9 +31,9 @@ const Logo = styled.span`
 
 const Header = ({ children }: { children?: React$Element<*> }) =>
   <Container>
-    <Title>
+    <TitleLink to="/">
       <Logo><span role="img" aria-label="logo">📥</span></Logo> Shoebox
-    </Title>
+    </TitleLink>
     {children}
   </Container>
 

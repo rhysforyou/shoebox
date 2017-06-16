@@ -1,4 +1,8 @@
+// @flow
+import React from 'react'
 import styled, { css } from 'styled-components'
+
+type InputEvent = { target: HTMLInputElement } & Event
 
 const TextField = styled.input.attrs({
   type: 'text'
@@ -28,4 +32,15 @@ const TextField = styled.input.attrs({
 	`}
 `
 
-export default TextField
+const NormalizedTextField = ({
+  onChange,
+  ...props
+}: {
+  onChange: string => any
+}) =>
+  <TextField
+    onChange={(e: InputEvent) => onChange(e.target.value)}
+    {...props}
+  />
+
+export default NormalizedTextField

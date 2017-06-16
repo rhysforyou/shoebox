@@ -47,7 +47,7 @@ const SiteName = styled.span`
 
 const Thumbnail = styled.img`
   max-height: 5rem;
-  max-width: 5rem;
+  width: 5rem;
   margin-right: 1rem;
 
   @media (max-width: 24rem) {

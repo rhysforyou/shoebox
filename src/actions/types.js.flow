@@ -1,2 +1,28 @@
 // @flow
-export type Action = any
+import type { Dispatch } from 'redux'
+import type { State } from '../reducers/types'
+
+export type Action =
+  | {|
+      type: 'CREATE_DRAFT',
+      name: string,
+      entity: Object
+    |}
+  | {|
+      type: 'UPDATE_DRAFT',
+      name: string,
+      field: string,
+      value: ?any,
+      isUserAction: boolean
+    |}
+  | {|
+      type: 'COMMIT_DRAFT',
+      name: string,
+      entity: Object
+    |}
+  | {|
+      type: 'DISCARD_DRAFT',
+      name: string
+    |}
+
+export type Thunk = (dispatch: Dispatch<Action>, getState: () => State) => void

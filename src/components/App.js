@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router'
 import Header from './Header'
 import { LinkButton } from './Button'
 import AllBookmarks from '../containers/AllBookmarks'
-import NewBookmarkForm from '../containers/NewBookmarkForm'
+import NewBookmark from '../containers/NewBookmark'
 
 const Container = styled.div`
   max-width: 48rem;
@@ -23,7 +23,7 @@ const App = () =>
     </Header>
     <Switch>
       <Route exact path="/" component={AllBookmarks} />
-      <Route path="/add" component={NewBookmarkForm} />
+      <Route path="/add" component={NewBookmark} />
     </Switch>
   </Container>
 

@@ -1,5 +1,6 @@
 // @flow
 import { createStore, applyMiddleware, compose } from 'redux'
+import thunk from 'redux-thunk'
 import { createLogger } from 'redux-logger'
 import shoebox from '../reducers/shoebox'
 
@@ -11,7 +12,10 @@ const configureStore = () => {
     collapsed: true
   })
 
-  const store = createStore(shoebox, composeEnhancers(applyMiddleware(logger)))
+  const store = createStore(
+    shoebox,
+    composeEnhancers(applyMiddleware(logger, thunk))
+  )
   return store
 }
 
