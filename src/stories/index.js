@@ -5,17 +5,19 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
+import { injectGlobal } from 'styled-components'
 
 import Bookmark from '../components/Bookmark'
 import Header from '../components/Header'
 import Button from '../components/Button'
-import Welcome from './Welcome'
 
-import '../index.css'
-
-storiesOf('Welcome', module).add('to Storybook', () =>
-  <Welcome showApp={linkTo('Button')} />
-)
+injectGlobal`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+`
 
 storiesOf('Header', module)
   .add('with default content', () => <Header />)
