@@ -22,6 +22,7 @@ injectGlobal`
 `
 
 storiesOf('Header', module)
+  .addDecorator(StoryRouter())
   .add('with default content', () => <Header />)
   .add('with a child component', () =>
     <Header>
@@ -30,9 +31,15 @@ storiesOf('Header', module)
   )
 
 storiesOf('Button', module)
-  .add('with the default style', () => <Button>Button</Button>)
-  .add('with the primary style', () => <Button primary>Button</Button>)
-  .add('with the block style', () => <Button block>Button</Button>)
+  .add('with the default style', () =>
+    <Button onClick={action('click')}>Button</Button>
+  )
+  .add('with the primary style', () =>
+    <Button onClick={action('click')} primary>Button</Button>
+  )
+  .add('with the block style', () =>
+    <Button onClick={action('click')} block>Button</Button>
+  )
 
 storiesOf('LinkButton', module)
   .addDecorator(StoryRouter())
@@ -77,7 +84,15 @@ storiesOf('BookmarkSummary', module)
   )
 
 storiesOf('TextField', module)
-  .add('with the default style', () => <TextField />)
-  .add('with the block style', () => <TextField block />)
-  .add('with value', () => <TextField value="A value" />)
-  .add('with placeholder', () => <TextField placeholder="A placeholder" />)
+  .add('with the default style', () =>
+    <TextField onChange={action('change')} />
+  )
+  .add('with the block style', () =>
+    <TextField onChange={action('change')} block />
+  )
+  .add('with value', () =>
+    <TextField onChange={action('change')} value="A value" />
+  )
+  .add('with placeholder', () =>
+    <TextField onChange={action('change')} placeholder="A placeholder" />
+  )
