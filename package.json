@@ -8,6 +8,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
     "reselect": "^3.0.1",
     "styled-components": "^2.1.0",
@@ -18,7 +20,8 @@
     "flow-bin": "^0.48.0",
     "react-scripts": "1.0.7",
     "react-test-renderer": "^15.6.1",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "storybook-router": "^0.2.6"
   },
   "scripts": {
     "start": "react-scripts start",

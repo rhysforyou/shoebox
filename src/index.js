@@ -2,6 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { injectGlobal } from 'styled-components'
 import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
@@ -18,7 +19,9 @@ injectGlobal`
 const store = configureStore()
 
 ReactDOM.render(
-  <Provider store={store}><App /></Provider>,
+  <Provider store={store}>
+    <Router><App /></Router>
+  </Provider>,
   document.getElementById('root')
 )
 registerServiceWorker()

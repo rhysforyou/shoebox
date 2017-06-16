@@ -1,15 +1,17 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
 
-import React from 'react';
+import React from 'react'
 
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
-import { injectGlobal } from 'styled-components';
+import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import { linkTo } from '@storybook/addon-links'
+import StoryRouter from 'storybook-router'
+import { injectGlobal } from 'styled-components'
 
-import BookmarkSummary from '../components/BookmarkSummary';
-import Header from '../components/Header';
-import Button from '../components/Button';
+import BookmarkSummary from '../components/BookmarkSummary'
+import Header from '../components/Header'
+import Button, { LinkButton } from '../components/Button'
+import TextField from '../components/TextField'
 
 injectGlobal`
   body {
@@ -17,21 +19,32 @@ injectGlobal`
     padding: 0;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
-`;
+`
 
 storiesOf('Header', module)
   .add('with default content', () => <Header />)
   .add('with a child component', () =>
     <Header>
-      <Button href="/add">Add Bookmark</Button>
+      <Button to="/add">Add Bookmark</Button>
     </Header>
-  );
+  )
 
 storiesOf('Button', module)
-  .add('with the default style', () => <Button href="#">Button</Button>)
+  .add('with the default style', () => <Button>Button</Button>)
+  .add('with the primary style', () => <Button primary>Button</Button>)
+  .add('with the block style', () => <Button block>Button</Button>)
+
+storiesOf('LinkButton', module)
+  .addDecorator(StoryRouter())
+  .add('with the default style', () =>
+    <LinkButton to="#">LinkButton</LinkButton>
+  )
   .add('with the primary style', () =>
-    <Button primary href="#">Button</Button>
-  );
+    <LinkButton primary to="#">LinkButton</LinkButton>
+  )
+  .add('with the block style', () =>
+    <LinkButton block to="#">LinkButton</LinkButton>
+  )
 
 storiesOf('BookmarkSummary', module)
   .add('with image', () =>
@@ -61,4 +74,10 @@ storiesOf('BookmarkSummary', module)
       url="https://facebook.github.io/react"
       image="https://facebook.github.io/react/img/logo_og.png"
     />
-  );
+  )
+
+storiesOf('TextField', module)
+  .add('with the default style', () => <TextField />)
+  .add('with the block style', () => <TextField block />)
+  .add('with value', () => <TextField value="A value" />)
+  .add('with placeholder', () => <TextField placeholder="A placeholder" />)

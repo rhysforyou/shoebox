@@ -1,7 +1,7 @@
 // @flow
-import React from 'react';
-import styled from 'styled-components';
-import marked from 'marked';
+import React from 'react'
+import styled from 'styled-components'
+import marked from 'marked'
 
 const LinkedContainer = styled.a`
   padding: 1rem;
@@ -22,12 +22,12 @@ const LinkedContainer = styled.a`
     background: #E5F1FF;
     color: white;
   }
-`;
+`
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-`;
+`
 
 const Title = styled.h2`
   font-size: 1.2rem;
@@ -35,7 +35,7 @@ const Title = styled.h2`
   margin: 0;
   display: inline-block;
   color: #4990E2;
-`;
+`
 
 const SiteName = styled.span`
   font-size: 0.8rem;
@@ -43,7 +43,7 @@ const SiteName = styled.span`
   margin-top: 0.2rem;
   display: inline-block;
   color: #999;
-`;
+`
 
 const Thumbnail = styled.img`
   max-height: 5rem;
@@ -53,7 +53,7 @@ const Thumbnail = styled.img`
   @media (max-width: 24rem) {
     max-width: 4rem;
   }
-`;
+`
 
 const Description = styled.div`
   color: #999;
@@ -66,7 +66,7 @@ const Description = styled.div`
       margin-bottom: 0;
     }
   }
-`;
+`
 
 type Props = {
   site?: string,
@@ -74,7 +74,7 @@ type Props = {
   description: string,
   url: string,
   image?: string
-};
+}
 
 const BookmarkSummary = ({ site, title, description, url, image }: Props) =>
   <LinkedContainer href={url}>
@@ -84,6 +84,6 @@ const BookmarkSummary = ({ site, title, description, url, image }: Props) =>
       {site && <SiteName>{site}</SiteName>}
       <Description dangerouslySetInnerHTML={{ __html: marked(description) }} />
     </Content>
-  </LinkedContainer>;
+  </LinkedContainer>
 
-export default BookmarkSummary;
+export default BookmarkSummary

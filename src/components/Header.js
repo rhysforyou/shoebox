@@ -1,7 +1,6 @@
 // @flow
 import React from 'react'
 import styled from 'styled-components'
-import Button from './Button'
 
 const Container = styled.header`
   padding: 1rem;
