@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import Bookmark from './Bookmark';
+import BookmarkSummary from './BookmarkSummary';
 
 import type { Bookmark as bookmarks$Bookmark } from '../reducers/bookmarks';
 
@@ -16,7 +16,7 @@ type Props = {
 const BookmarkList = ({ bookmarks }: Props) =>
   <Container>
     {bookmarks.map(({ id, site, title, description, url, image }) =>
-      <Bookmark
+      <BookmarkSummary
         key={id}
         site={site}
         title={title}

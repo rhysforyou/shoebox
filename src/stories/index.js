@@ -1,15 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
 
-import React from 'react'
+import React from 'react';
 
-import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import { linkTo } from '@storybook/addon-links'
-import { injectGlobal } from 'styled-components'
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { linkTo } from '@storybook/addon-links';
+import { injectGlobal } from 'styled-components';
 
-import Bookmark from '../components/Bookmark'
-import Header from '../components/Header'
-import Button from '../components/Button'
+import BookmarkSummary from '../components/BookmarkSummary';
+import Header from '../components/Header';
+import Button from '../components/Button';
 
 injectGlobal`
   body {
@@ -17,7 +17,7 @@ injectGlobal`
     padding: 0;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
-`
+`;
 
 storiesOf('Header', module)
   .add('with default content', () => <Header />)
@@ -25,15 +25,17 @@ storiesOf('Header', module)
     <Header>
       <Button href="/add">Add Bookmark</Button>
     </Header>
-  )
+  );
 
 storiesOf('Button', module)
   .add('with the default style', () => <Button href="#">Button</Button>)
-  .add('with the primary style', () => <Button primary href="#">Button</Button>)
+  .add('with the primary style', () =>
+    <Button primary href="#">Button</Button>
+  );
 
-storiesOf('Bookmark', module)
+storiesOf('BookmarkSummary', module)
   .add('with image', () =>
-    <Bookmark
+    <BookmarkSummary
       site="An Example Website"
       title="An Example Bookmark"
       description="This is an example of what a bookmrk with an image might look like"
@@ -42,7 +44,7 @@ storiesOf('Bookmark', module)
     />
   )
   .add('without image', () =>
-    <Bookmark
+    <BookmarkSummary
       site="An Example Website"
       title="An Example Bookmark"
       description="This is an example of what a bookmrk without an image might look like"
@@ -50,7 +52,7 @@ storiesOf('Bookmark', module)
     />
   )
   .add('with Markdown content', () =>
-    <Bookmark
+    <BookmarkSummary
       site="An Example Website"
       title="An Example Bookmark"
       description={
@@ -59,4 +61,4 @@ storiesOf('Bookmark', module)
       url="https://facebook.github.io/react"
       image="https://facebook.github.io/react/img/logo_og.png"
     />
-  )
+  );
