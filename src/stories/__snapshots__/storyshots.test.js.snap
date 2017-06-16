@@ -92,15 +92,33 @@ exports[`Storyshots Bookmark without image 1`] = `
 </a>
 `;
 
-exports[`Storyshots Header default 1`] = `
+exports[`Storyshots Button with the default style 1`] = `
+<a
+  className="sc-ifAKCX ctiZtH"
+  href="#"
+>
+  Button
+</a>
+`;
+
+exports[`Storyshots Button with the primary style 1`] = `
+<a
+  className="sc-ifAKCX ctXLgD"
+  href="#"
+>
+  Button
+</a>
+`;
+
+exports[`Storyshots Header with a child component 1`] = `
 <header
-  className="sc-ifAKCX jhytRW"
+  className="sc-EHOje jkYNiG"
 >
   <h1
-    className="sc-EHOje fNiger"
+    className="sc-bZQynM cCVNMf"
   >
     <span
-      className="sc-bZQynM lhlPzc"
+      className="sc-gzVnrw hPBDtA"
     >
       <span
         aria-label="logo"
@@ -112,11 +130,33 @@ exports[`Storyshots Header default 1`] = `
      Shoebox
   </h1>
   <a
-    className="sc-gzVnrw fEkQTb"
+    className="sc-ifAKCX ctiZtH"
     href="/add"
   >
     Add Bookmark
   </a>
+</header>
+`;
+
+exports[`Storyshots Header with default content 1`] = `
+<header
+  className="sc-EHOje jkYNiG"
+>
+  <h1
+    className="sc-bZQynM cCVNMf"
+  >
+    <span
+      className="sc-gzVnrw hPBDtA"
+    >
+      <span
+        aria-label="logo"
+        role="img"
+      >
+        📥
+      </span>
+    </span>
+     Shoebox
+  </h1>
 </header>
 `;
 

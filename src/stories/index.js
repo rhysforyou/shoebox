@@ -8,6 +8,7 @@ import { linkTo } from '@storybook/addon-links'
 
 import Bookmark from '../components/Bookmark'
 import Header from '../components/Header'
+import Button from '../components/Button'
 import Welcome from './Welcome'
 
 import '../index.css'
@@ -16,7 +17,17 @@ storiesOf('Welcome', module).add('to Storybook', () =>
   <Welcome showApp={linkTo('Button')} />
 )
 
-storiesOf('Header', module).add('default', () => <Header />)
+storiesOf('Header', module)
+  .add('with default content', () => <Header />)
+  .add('with a child component', () =>
+    <Header>
+      <Button href="/add">Add Bookmark</Button>
+    </Header>
+  )
+
+storiesOf('Button', module)
+  .add('with the default style', () => <Button href="#">Button</Button>)
+  .add('with the primary style', () => <Button primary href="#">Button</Button>)
 
 storiesOf('Bookmark', module)
   .add('with image', () =>
