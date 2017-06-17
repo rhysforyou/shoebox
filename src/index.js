@@ -8,6 +8,7 @@ import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
 import configureStore from './store/configureStore'
 
+// eslint-disable-next-line no-unused-expressions
 injectGlobal`
   body {
     margin: 0;
