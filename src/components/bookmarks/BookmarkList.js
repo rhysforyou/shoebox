@@ -1,17 +1,17 @@
 // @flow
-import React from 'react';
-import styled from 'styled-components';
-import BookmarkSummary from './BookmarkSummary';
+import React from 'react'
+import styled from 'styled-components'
+import BookmarkSummary from './BookmarkSummary'
 
-import type { Bookmark as bookmarks$Bookmark } from '../reducers/bookmarks';
+import type { Bookmark as bookmarks$Bookmark } from '../../reducers/bookmarks'
 
 const Container = styled.div`
   padding: 1rem 0;
-`;
+`
 
 type Props = {
   bookmarks: Array<bookmarks$Bookmark>
-};
+}
 
 const BookmarkList = ({ bookmarks }: Props) =>
   <Container>
@@ -25,6 +25,6 @@ const BookmarkList = ({ bookmarks }: Props) =>
         image={image}
       />
     )}
-  </Container>;
+  </Container>
 
-export default BookmarkList;
+export default BookmarkList

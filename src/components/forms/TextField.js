@@ -9,8 +9,8 @@ const TextField = styled.input.attrs({
 })`
   color: #333;
   font-size: 1rem;
-  border: 2px solid #ccc;
-  padding: 0.5rem 1rem;
+  border: 2px solid #eee;
+  padding: 0.6rem;
   margin-bottom: 1rem;
   border-radius: 3px;
   outline: none;

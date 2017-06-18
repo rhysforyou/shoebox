@@ -8,10 +8,10 @@ import { linkTo } from '@storybook/addon-links'
 import StoryRouter from 'storybook-router'
 import { injectGlobal } from 'styled-components'
 
-import BookmarkSummary from '../components/BookmarkSummary'
+import BookmarkSummary from '../components/bookmarks/BookmarkSummary'
 import Header from '../components/Header'
 import Button, { LinkButton } from '../components/Button'
-import TextField from '../components/TextField'
+import TextField from '../components/forms/TextField'
 
 injectGlobal`
   body {

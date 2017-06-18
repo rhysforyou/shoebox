@@ -1,7 +1,7 @@
 // @flow
 import { connect } from 'react-redux'
 import { allBookmarksSelector } from '../selectors/bookmarks'
-import BookmarkList from '../components/BookmarkList'
+import BookmarkList from '../components/bookmarks/BookmarkList'
 
 import type { Dispatch } from 'redux'
 import type { State } from '../reducers/types'

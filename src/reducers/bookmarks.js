@@ -1,7 +1,7 @@
 // @flow
-import uuid from 'uuid';
+import uuid from 'uuid'
 
-import type { Action } from '../actions/types';
+import type { Action } from '../actions/types'
 
 export type Bookmark = {
   id: string,
@@ -10,8 +10,8 @@ export type Bookmark = {
   url: string,
   description: string,
   image?: string
-};
-export type State = { [id: string]: Bookmark };
+}
+export type State = { [id: string]: Bookmark }
 
 const BOOKMARKS: State = [
   {
@@ -60,10 +60,22 @@ const BOOKMARKS: State = [
 ].reduce(
   (state: State, bookmark: Bookmark) => ({ ...state, [bookmark.id]: bookmark }),
   {}
-);
+)
 
 function bookmarks(state: State = BOOKMARKS, action: Action): State {
-  return state;
+  switch (action.type) {
+    case 'COMMIT_DRAFT':
+      const bookmark: Bookmark = {
+        ...action.entity,
+        id: uuid.v4()
+      }
+      return {
+        ...state,
+        [bookmark.id]: bookmark
+      }
+    default:
+      return state
+  }
 }
 
-export default bookmarks;
+export default bookmarks

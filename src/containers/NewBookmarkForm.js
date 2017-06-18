@@ -1,14 +1,17 @@
 // @flow
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router'
 import { commitDraft } from '../actions/drafts'
-import BookmarkForm from '../components/BookmarkForm'
+import BookmarkForm from '../components/bookmarks/BookmarkForm'
 
 import type { Dispatch } from 'redux'
+import type { RouterHistory } from 'react-router'
 import type { State } from '../reducers/types'
 import type { Action } from '../actions/types'
 
 type OwnProps = {
-  draft: string
+  draft: string,
+  history: RouterHistory
 }
 
 type StateProps = {
@@ -16,7 +19,7 @@ type StateProps = {
 }
 
 type DispatchProps = {
-  commitDraft: () => any
+  onSubmit: (e: Event) => any
 }
 
 const mapStateToProps = (state: State, props: OwnProps): StateProps => ({
@@ -27,7 +30,13 @@ const mapDispatchToProps = (
   dispatch: Dispatch<Action>,
   props: OwnProps
 ): DispatchProps => ({
-  commitDraft: () => dispatch(commitDraft(props.draft))
+  onSubmit: (e: Event) => {
+    e.preventDefault()
+    dispatch(commitDraft(props.draft))
+    props.history.push('/')
+  }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(BookmarkForm)
+export default withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(BookmarkForm)
+)

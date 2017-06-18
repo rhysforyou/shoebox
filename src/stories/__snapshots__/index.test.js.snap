@@ -115,7 +115,7 @@ exports[`Storyshots BookmarkSummary without image 1`] = `
 
 exports[`Storyshots Button with the block style 1`] = `
 <button
-  className="sc-dnqmqq bShulH"
+  className="sc-dnqmqq ebRKOu"
   onClick={[Function]}
 >
   Button
@@ -124,7 +124,7 @@ exports[`Storyshots Button with the block style 1`] = `
 
 exports[`Storyshots Button with the default style 1`] = `
 <button
-  className="sc-dnqmqq cHZWfr"
+  className="sc-dnqmqq cIMhLF"
   onClick={[Function]}
 >
   Button
@@ -133,7 +133,7 @@ exports[`Storyshots Button with the default style 1`] = `
 
 exports[`Storyshots Button with the primary style 1`] = `
 <button
-  className="sc-dnqmqq jcPqQv"
+  className="sc-dnqmqq bVOmuI"
   onClick={[Function]}
 >
   Button
@@ -163,7 +163,7 @@ exports[`Storyshots Header with a child component 1`] = `
        Shoebox
     </a>
     <button
-      className="sc-dnqmqq cHZWfr"
+      className="sc-dnqmqq cIMhLF"
       to="/add"
     >
       Add Bookmark
@@ -202,7 +202,7 @@ exports[`Storyshots LinkButton with the block style 1`] = `
 <div>
   <a
     block={true}
-    className="sc-iwsKbI gUriuB"
+    className="sc-iwsKbI ZvAmj"
     href="#"
     onClick={[Function]}
   >
@@ -214,7 +214,7 @@ exports[`Storyshots LinkButton with the block style 1`] = `
 exports[`Storyshots LinkButton with the default style 1`] = `
 <div>
   <a
-    className="sc-iwsKbI gvlzaE"
+    className="sc-iwsKbI dgvCGT"
     href="#"
     onClick={[Function]}
   >
@@ -226,7 +226,7 @@ exports[`Storyshots LinkButton with the default style 1`] = `
 exports[`Storyshots LinkButton with the primary style 1`] = `
 <div>
   <a
-    className="sc-iwsKbI kyXwYE"
+    className="sc-iwsKbI jVfbKO"
     href="#"
     onClick={[Function]}
     primary={true}
@@ -238,7 +238,7 @@ exports[`Storyshots LinkButton with the primary style 1`] = `
 
 exports[`Storyshots TextField with placeholder 1`] = `
 <input
-  className="sc-gqjmRU frmyzX"
+  className="sc-gqjmRU dSwhSU"
   onChange={[Function]}
   placeholder="A placeholder"
   type="text"
@@ -247,7 +247,7 @@ exports[`Storyshots TextField with placeholder 1`] = `
 
 exports[`Storyshots TextField with the block style 1`] = `
 <input
-  className="sc-gqjmRU kDorVw"
+  className="sc-gqjmRU cNMBpi"
   onChange={[Function]}
   type="text"
 />
@@ -255,7 +255,7 @@ exports[`Storyshots TextField with the block style 1`] = `
 
 exports[`Storyshots TextField with the default style 1`] = `
 <input
-  className="sc-gqjmRU frmyzX"
+  className="sc-gqjmRU dSwhSU"
   onChange={[Function]}
   type="text"
 />
@@ -263,7 +263,7 @@ exports[`Storyshots TextField with the default style 1`] = `
 
 exports[`Storyshots TextField with value 1`] = `
 <input
-  className="sc-gqjmRU frmyzX"
+  className="sc-gqjmRU dSwhSU"
   onChange={[Function]}
   type="text"
   value="A value"

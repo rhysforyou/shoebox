@@ -38,6 +38,12 @@ const sharedStyles = css`
 			display: block;
 			width: 100%;
 	`}
+
+	${props =>
+    props.alignEnd &&
+    css`
+			align-self: flex-end;
+	`}
 `
 
 export const Button = styled.button`
