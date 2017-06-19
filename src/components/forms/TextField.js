@@ -1,11 +1,11 @@
 // @flow
-import React from 'react'
-import styled, { css } from 'styled-components'
+import React from "react"
+import styled, { css } from "styled-components"
 
 type InputEvent = { target: HTMLInputElement } & Event
 
-const TextField = styled.input.attrs({
-  type: 'text'
+const WrappedTextField = styled.input.attrs({
+  type: "text"
 })`
   color: #333;
   font-size: 1rem;
@@ -24,23 +24,22 @@ const TextField = styled.input.attrs({
     border-color: #4990E2;
   }
 
-	${props =>
-    props.block &&
-    css`
+	${props => props.block && css`
 			display: block;
 			width: 100%;
 	`}
 `
 
-const NormalizedTextField = ({
+export const TextField = ({
   onChange,
   ...props
 }: {
   onChange: string => any
-}) =>
-  <TextField
+}) => (
+  <WrappedTextField
     onChange={(e: InputEvent) => onChange(e.target.value)}
     {...props}
   />
+)
 
-export default NormalizedTextField
+export default TextField

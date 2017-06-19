@@ -1,74 +1,71 @@
 // @flow
-import React from 'react'
-import styled from 'styled-components'
-import DraftTextField from '../../containers/forms/DraftTextField'
-import { SubmitButton } from '../Button'
+import React from "react"
+import styled from "styled-components"
+import DraftTextField from "../../containers/forms/DraftTextField"
+import { Button, SubmitButton } from "../Button"
+import { Form, FormGroup, FormActions, Label } from "../forms"
 
 const Container = styled.div`
-  padding: 0 1rem;
+  padding: 1rem;
 
   & > input {
     float: right;
   }
 `
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-`
-
-const FormGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-
-  input {
-    flex-grow: 1;
-    width: 100%;
-  }
-`
-
-const Label = styled.span`
-  margin-bottom: 0.4rem;
-  color: #666;
-  flex-basis: 1
-  display: inline-block;
-  text-align: right;
+const Title = styled.h2`
+  margin: 0;
+  padding: 0 0 1rem 8rem;
 `
 
 type Props = {
   draft: string,
   draftExists: boolean,
-  onSubmit: (e: Event) => any
+  onSubmit: (e: Event) => any,
+  onCancel: (e: Event) => any
 }
 
-const BookmarkForm = ({ draft, draftExists, onSubmit }: Props) =>
-  <Container>
-    <h2>Add Bookmark</h2>
-    {draftExists &&
+export const BookmarkForm = ({
+  draft,
+  draftExists,
+  onSubmit,
+  onCancel
+}: Props) => {
+  if (!draftExists) {
+    return <span>Loading…</span>
+  }
+
+  return (
+    <Container>
+      <Title>Add Bookmark</Title>
       <Form onSubmit={onSubmit}>
-        <FormGroup>
-          <Label>Site</Label>
-          <DraftTextField draft={draft} name="site" />
+        <FormGroup inline>
+          <Label htmlFor="site">Site</Label>
+          <DraftTextField draft={draft} id="site" />
         </FormGroup>
-        <FormGroup>
-          <Label>Title</Label>
-          <DraftTextField draft={draft} name="title" />
+        <FormGroup inline>
+          <Label htmlFor="title">Title</Label>
+          <DraftTextField draft={draft} id="title" />
         </FormGroup>
-        <FormGroup>
-          <Label>URL</Label>
-          <DraftTextField draft={draft} name="url" />
+        <FormGroup inline>
+          <Label htmlFor="url">URL</Label>
+          <DraftTextField draft={draft} id="url" />
         </FormGroup>
-        <FormGroup>
-          <Label>Image</Label>
-          <DraftTextField draft={draft} name="image" />
+        <FormGroup inline>
+          <Label htmlFor="image">Image</Label>
+          <DraftTextField draft={draft} id="image" />
         </FormGroup>
-        <FormGroup>
-          <Label>Description</Label>
-          <DraftTextField draft={draft} name="description" />
+        <FormGroup inline>
+          <Label htmlFor="description">Description</Label>
+          <DraftTextField draft={draft} id="description" />
         </FormGroup>
-        <SubmitButton alignEnd value="Add Bookmark" />
-      </Form>}
-  </Container>
+        <FormActions>
+          {onCancel && <Button onClick={onCancel}>Cancel</Button>}
+          <SubmitButton primary value="Add Bookmark" />
+        </FormActions>
+      </Form>
+    </Container>
+  )
+}
 
 export default BookmarkForm

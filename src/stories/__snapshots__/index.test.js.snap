@@ -115,7 +115,7 @@ exports[`Storyshots BookmarkSummary without image 1`] = `
 
 exports[`Storyshots Button with the block style 1`] = `
 <button
-  className="sc-dnqmqq ebRKOu"
+  className="sc-dnqmqq iNUpUY"
   onClick={[Function]}
 >
   Button
@@ -124,7 +124,7 @@ exports[`Storyshots Button with the block style 1`] = `
 
 exports[`Storyshots Button with the default style 1`] = `
 <button
-  className="sc-dnqmqq cIMhLF"
+  className="sc-dnqmqq cRfnoq"
   onClick={[Function]}
 >
   Button
@@ -133,11 +133,157 @@ exports[`Storyshots Button with the default style 1`] = `
 
 exports[`Storyshots Button with the primary style 1`] = `
 <button
-  className="sc-dnqmqq bVOmuI"
+  className="sc-dnqmqq gdvGJM"
   onClick={[Function]}
 >
   Button
 </button>
+`;
+
+exports[`Storyshots Form with the default appearance 1`] = `
+<form
+  className="sc-gqjmRU gKJxEj"
+  onSubmit={[Function]}
+>
+  <div
+    className="sc-jTzLTM iSNRDh"
+  >
+    <label
+      className="sc-fjdhpX lmuXoa"
+      htmlFor="one"
+    >
+      Text Field
+    </label>
+    <input
+      className="sc-jzJRlG cFivGi"
+      id="ome"
+      onChange={[Function]}
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+  <div
+    className="sc-jTzLTM iSNRDh"
+  >
+    <label
+      className="sc-fjdhpX lmuXoa"
+      htmlFor="twp"
+    >
+      Text Field
+    </label>
+    <input
+      className="sc-jzJRlG cFivGi"
+      id="twp"
+      onChange={[Function]}
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+  <div
+    className="sc-jTzLTM iSNRDh"
+  >
+    <label
+      className="sc-fjdhpX lmuXoa"
+      htmlFor="three"
+    >
+      Text Field
+    </label>
+    <input
+      className="sc-jzJRlG cFivGi"
+      id="three"
+      onChange={[Function]}
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+  <div
+    className="sc-VigVT duPGgN"
+  >
+    <button
+      className="sc-dnqmqq cRfnoq"
+    >
+      Cancel
+    </button>
+    <input
+      className="sc-gZMcBi dOpOdz"
+      type="submit"
+      value="Submit"
+    />
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form with the inline style 1`] = `
+<form
+  className="sc-gqjmRU gKJxEj"
+  onSubmit={[Function]}
+>
+  <div
+    className="sc-jTzLTM gZPTGI"
+  >
+    <label
+      className="sc-fjdhpX lmuXoa"
+      htmlFor="one"
+    >
+      Text Field
+    </label>
+    <input
+      className="sc-jzJRlG cFivGi"
+      id="ome"
+      onChange={[Function]}
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+  <div
+    className="sc-jTzLTM gZPTGI"
+  >
+    <label
+      className="sc-fjdhpX lmuXoa"
+      htmlFor="twp"
+    >
+      Text Field
+    </label>
+    <input
+      className="sc-jzJRlG cFivGi"
+      id="twp"
+      onChange={[Function]}
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+  <div
+    className="sc-jTzLTM gZPTGI"
+  >
+    <label
+      className="sc-fjdhpX lmuXoa"
+      htmlFor="three"
+    >
+      Text Field
+    </label>
+    <input
+      className="sc-jzJRlG cFivGi"
+      id="three"
+      onChange={[Function]}
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+  <div
+    className="sc-VigVT duPGgN"
+  >
+    <button
+      className="sc-dnqmqq cRfnoq"
+    >
+      Cancel
+    </button>
+    <input
+      className="sc-gZMcBi dOpOdz"
+      type="submit"
+      value="Submit"
+    />
+  </div>
+</form>
 `;
 
 exports[`Storyshots Header with a child component 1`] = `
@@ -163,7 +309,7 @@ exports[`Storyshots Header with a child component 1`] = `
        Shoebox
     </a>
     <button
-      className="sc-dnqmqq cIMhLF"
+      className="sc-dnqmqq cRfnoq"
       to="/add"
     >
       Add Bookmark
@@ -202,7 +348,7 @@ exports[`Storyshots LinkButton with the block style 1`] = `
 <div>
   <a
     block={true}
-    className="sc-iwsKbI ZvAmj"
+    className="sc-iwsKbI dhcJzY"
     href="#"
     onClick={[Function]}
   >
@@ -214,7 +360,7 @@ exports[`Storyshots LinkButton with the block style 1`] = `
 exports[`Storyshots LinkButton with the default style 1`] = `
 <div>
   <a
-    className="sc-iwsKbI dgvCGT"
+    className="sc-iwsKbI fknqMv"
     href="#"
     onClick={[Function]}
   >
@@ -226,7 +372,7 @@ exports[`Storyshots LinkButton with the default style 1`] = `
 exports[`Storyshots LinkButton with the primary style 1`] = `
 <div>
   <a
-    className="sc-iwsKbI jVfbKO"
+    className="sc-iwsKbI iHYEiZ"
     href="#"
     onClick={[Function]}
     primary={true}
@@ -238,7 +384,7 @@ exports[`Storyshots LinkButton with the primary style 1`] = `
 
 exports[`Storyshots TextField with placeholder 1`] = `
 <input
-  className="sc-gqjmRU dSwhSU"
+  className="sc-jzJRlG cFivGi"
   onChange={[Function]}
   placeholder="A placeholder"
   type="text"
@@ -247,7 +393,7 @@ exports[`Storyshots TextField with placeholder 1`] = `
 
 exports[`Storyshots TextField with the block style 1`] = `
 <input
-  className="sc-gqjmRU cNMBpi"
+  className="sc-jzJRlG gEwRck"
   onChange={[Function]}
   type="text"
 />
@@ -255,7 +401,7 @@ exports[`Storyshots TextField with the block style 1`] = `
 
 exports[`Storyshots TextField with the default style 1`] = `
 <input
-  className="sc-gqjmRU dSwhSU"
+  className="sc-jzJRlG cFivGi"
   onChange={[Function]}
   type="text"
 />
@@ -263,7 +409,7 @@ exports[`Storyshots TextField with the default style 1`] = `
 
 exports[`Storyshots TextField with value 1`] = `
 <input
-  className="sc-gqjmRU dSwhSU"
+  className="sc-jzJRlG cFivGi"
   onChange={[Function]}
   type="text"
   value="A value"

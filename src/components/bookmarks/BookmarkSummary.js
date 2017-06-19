@@ -1,7 +1,7 @@
 // @flow
-import React from 'react'
-import styled from 'styled-components'
-import marked from 'marked'
+import React from "react"
+import styled from "styled-components"
+import marked from "marked"
 
 const LinkedContainer = styled.a`
   padding: 1rem;
@@ -76,7 +76,13 @@ type Props = {
   image?: string
 }
 
-const BookmarkSummary = ({ site, title, description, url, image }: Props) =>
+export const BookmarkSummary = ({
+  site,
+  title,
+  description,
+  url,
+  image
+}: Props) => (
   <LinkedContainer href={url}>
     {image && <Thumbnail src={image} />}
     <Content>
@@ -85,5 +91,6 @@ const BookmarkSummary = ({ site, title, description, url, image }: Props) =>
       <Description dangerouslySetInnerHTML={{ __html: marked(description) }} />
     </Content>
   </LinkedContainer>
+)
 
 export default BookmarkSummary

@@ -1,5 +1,6 @@
-import styled, { css } from 'styled-components'
-import { Link } from 'react-router-dom'
+// @flow
+import styled, { css } from "styled-components"
+import { Link } from "react-router-dom"
 
 const sharedStyles = css`
 	background: transparent;
@@ -11,18 +12,14 @@ const sharedStyles = css`
 	display: inline-block;
 	font-size: 1rem;
 	padding: 0.5rem 0.8rem;
-  margin-top: 0.6rem;
   text-align: center;
   text-decoration: none;
 
   &:hover {
-    background: #4990E2;
-    color: white;
+    background: #E5F1FF;
   }
 
-	${props =>
-    props.primary &&
-    css`
+	${props => props.primary && css`
 			background: #4990E2;
 			color: white;
 
@@ -32,16 +29,12 @@ const sharedStyles = css`
 			}
 	`}
 
-	${props =>
-    props.block &&
-    css`
+	${props => props.block && css`
 			display: block;
 			width: 100%;
 	`}
 
-	${props =>
-    props.alignEnd &&
-    css`
+	${props => props.alignEnd && css`
 			align-self: flex-end;
 	`}
 `
@@ -55,7 +48,7 @@ ${sharedStyles}
 `
 
 export const SubmitButton = styled.input.attrs({
-  type: 'submit'
+  type: "submit"
 })`
 	${sharedStyles}
 `
