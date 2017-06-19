@@ -15,7 +15,7 @@ const Container = styled.div`
 
 const Title = styled.h2`
   margin: 0;
-  padding: 0 0 1rem 8rem;
+  padding: 0 0 1rem 9rem;
 `
 
 type Props = {

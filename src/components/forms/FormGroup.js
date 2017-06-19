@@ -15,7 +15,7 @@ export const FormGroup = styled.div`
     flex-direction: row;
 
     label {
-      width: 8rem;
+      width: 10rem;
       margin-right: 1rem;
     }
   `}

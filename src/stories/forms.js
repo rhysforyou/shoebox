@@ -62,7 +62,7 @@ storiesOf("Form")
         <TextField id="ome" placeholder="Placeholder" />
       </FormGroup>
       <FormGroup inline>
-        <Label htmlFor="twp">Text Field</Label>
+        <Label htmlFor="twp">Text Field With a Long Label</Label>
         <TextField id="twp" placeholder="Placeholder" />
       </FormGroup>
       <FormGroup inline>
