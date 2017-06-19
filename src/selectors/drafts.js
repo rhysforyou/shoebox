@@ -2,7 +2,7 @@
 import { createSelector } from 'reselect'
 
 import type { State } from '../reducers/types'
-import type { Draft } from '../reducers/drafts'
+import type { Draft } from '../lib/draft'
 
 export const draftExistsSelector = (
   state: State,
@@ -34,5 +34,5 @@ export const dirtySelector = createSelector(
   currentDraftSelector,
   fieldSelector,
   (draft: ?Draft, field: string): boolean =>
-    draft ? draft.dirty.get(field) || false : false
+    (draft ? draft.dirty.get(field) || false : false)
 )

@@ -1,9 +1,9 @@
 // @flow
-import React from "react"
-import styled from "styled-components"
-import { ConnectedTextField } from "../../containers/forms"
-import { Button, SubmitButton } from "../Button"
-import { Form, FormGroup, FormActions, Label } from "../forms"
+import React from 'react'
+import styled from 'styled-components'
+import { ConnectedTextField } from '../../containers/forms'
+import { Button, SubmitButton } from '../Button'
+import { Form, FormGroup, FormActions, Label } from '../forms'
 
 const Container = styled.div`
   padding: 1rem;
@@ -41,23 +41,27 @@ export const BookmarkForm = ({
       <Form onSubmit={onSubmit}>
         <FormGroup inline>
           <Label htmlFor="site">Site</Label>
-          <ConnectedTextField draft={draft} id="site" />
+          <ConnectedTextField draft={draft} id="site" name="site" />
         </FormGroup>
         <FormGroup inline>
           <Label htmlFor="title">Title</Label>
-          <ConnectedTextField draft={draft} id="title" />
+          <ConnectedTextField draft={draft} id="title" name="title" />
         </FormGroup>
         <FormGroup inline>
           <Label htmlFor="url">URL</Label>
-          <ConnectedTextField draft={draft} id="url" />
+          <ConnectedTextField draft={draft} id="url" name="url" />
         </FormGroup>
         <FormGroup inline>
           <Label htmlFor="image">Image</Label>
-          <ConnectedTextField draft={draft} id="image" />
+          <ConnectedTextField draft={draft} id="image" name="image" />
         </FormGroup>
         <FormGroup inline>
           <Label htmlFor="description">Description</Label>
-          <ConnectedTextField draft={draft} id="description" />
+          <ConnectedTextField
+            draft={draft}
+            id="description"
+            name="description"
+          />
         </FormGroup>
         <FormActions>
           <Button onClick={onCancel}>Cancel</Button>

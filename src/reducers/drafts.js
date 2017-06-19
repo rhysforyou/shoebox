@@ -1,17 +1,7 @@
 // @flow
-import { Map, Record } from 'immutable'
+import { Map } from 'immutable'
 import type { Action } from '../actions/types'
-
-type DraftFields = {|
-  entity: Map<string, any>,
-  dirty: Map<string, boolean>
-|}
-type DraftRecord = Record<DraftFields> & DraftFields
-
-export const Draft: Class<DraftRecord> = Record({
-  entity: Map(),
-  dirty: Map()
-})
+import Draft from '../lib/draft'
 
 export type State = Map<string, Draft>
 
