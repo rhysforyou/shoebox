@@ -1,7 +1,8 @@
 // @flow
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
-import { commitDraft } from '../actions/drafts'
+import { commitDraft, discardDraft } from '../actions/drafts'
+import { bookmarkListPath } from '../lib/routeHelpers'
 import BookmarkForm from '../components/bookmarks/BookmarkForm'
 
 import type { Dispatch } from 'redux'
@@ -21,7 +22,8 @@ type StateProps = {
 }
 
 type DispatchProps = {
-  onSubmit: (e: Event) => any
+  onSubmit: (e: Event) => any,
+  onCancel: (e: Event) => any
 }
 
 const mapStateToProps = (state: State, props: OwnProps): StateProps => ({
@@ -35,7 +37,11 @@ const mapDispatchToProps = (
   onSubmit: (e: Event) => {
     e.preventDefault()
     dispatch(commitDraft(props.draft))
-    props.history.push('/')
+    props.history.push(bookmarkListPath())
+  },
+  onCancel: (e: Event) => {
+    dispatch(discardDraft(props.draft))
+    props.history.push(bookmarkListPath())
   }
 })
 

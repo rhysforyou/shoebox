@@ -1,6 +1,7 @@
 // @flow
 import React from 'react'
 import styled from 'styled-components'
+import { bookmarkAddPath } from '../lib/routeHelpers'
 import { Route, Switch } from 'react-router'
 import Header from './Header'
 import { LinkButton } from './Button'
@@ -12,13 +13,15 @@ const Container = styled.div`
   margin: auto;
 `
 
-const App = () =>
+const App = () => (
   <Container>
     <Header>
       <Route
         exact
         path="/"
-        render={() => <LinkButton to="/add">Add Bookmark</LinkButton>}
+        render={() => (
+          <LinkButton to={bookmarkAddPath()}>Add Bookmark</LinkButton>
+        )}
       />
     </Header>
     <Switch>
@@ -26,5 +29,6 @@ const App = () =>
       <Route path="/add" component={NewBookmark} />
     </Switch>
   </Container>
+)
 
 export default App

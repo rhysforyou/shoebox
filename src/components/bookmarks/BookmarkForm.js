@@ -1,7 +1,7 @@
 // @flow
 import React from "react"
 import styled from "styled-components"
-import DraftTextField from "../../containers/forms/DraftTextField"
+import { ConnectedTextField } from "../../containers/forms"
 import { Button, SubmitButton } from "../Button"
 import { Form, FormGroup, FormActions, Label } from "../forms"
 
@@ -41,26 +41,26 @@ export const BookmarkForm = ({
       <Form onSubmit={onSubmit}>
         <FormGroup inline>
           <Label htmlFor="site">Site</Label>
-          <DraftTextField draft={draft} id="site" />
+          <ConnectedTextField draft={draft} id="site" />
         </FormGroup>
         <FormGroup inline>
           <Label htmlFor="title">Title</Label>
-          <DraftTextField draft={draft} id="title" />
+          <ConnectedTextField draft={draft} id="title" />
         </FormGroup>
         <FormGroup inline>
           <Label htmlFor="url">URL</Label>
-          <DraftTextField draft={draft} id="url" />
+          <ConnectedTextField draft={draft} id="url" />
         </FormGroup>
         <FormGroup inline>
           <Label htmlFor="image">Image</Label>
-          <DraftTextField draft={draft} id="image" />
+          <ConnectedTextField draft={draft} id="image" />
         </FormGroup>
         <FormGroup inline>
           <Label htmlFor="description">Description</Label>
-          <DraftTextField draft={draft} id="description" />
+          <ConnectedTextField draft={draft} id="description" />
         </FormGroup>
         <FormActions>
-          {onCancel && <Button onClick={onCancel}>Cancel</Button>}
+          <Button onClick={onCancel}>Cancel</Button>
           <SubmitButton primary value="Add Bookmark" />
         </FormActions>
       </Form>
