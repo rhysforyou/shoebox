@@ -1,15 +1,18 @@
 // @flow
 import React from 'react'
 import { connect } from 'react-redux'
-import { createDraft, discardDraft } from '../actions/drafts'
-import { draftExistsSelector, draftEntitySelector } from '../selectors/drafts'
+import { createDraft, discardDraft } from '../../actions/drafts'
+import {
+  draftExistsSelector,
+  draftEntitySelector
+} from '../../selectors/drafts'
 import NewBookmarkForm from './NewBookmarkForm'
-import BookmarkSummary from '../components/bookmarks/BookmarkSummary'
+import BookmarkSummary from '../../components/bookmarks/BookmarkSummary'
 
 import type { Dispatch } from 'redux'
-import type { State } from '../reducers/types'
-import type { Action } from '../actions/types'
-import type { Bookmark } from '../reducers/bookmarks'
+import type { State } from '../../reducers/types'
+import type { Action } from '../../actions/types'
+import type { Bookmark } from '../../reducers/bookmarks'
 
 type OwnProps = {
   draft: string
@@ -27,7 +30,7 @@ type DispatchProps = {
 
 export type Props = OwnProps & StateProps & DispatchProps
 
-class NewBookmark extends React.PureComponent {
+class InternalNewBookmark extends React.PureComponent {
   props: Props
 
   componentWillMount() {
@@ -80,13 +83,13 @@ const mapDispatchToProps = (
   discardDraft: () => dispatch(discardDraft(props.draft))
 })
 
-const ConnectedNewBookmark = connect(mapStateToProps, mapDispatchToProps)(
-  NewBookmark
+export const NewBookmark = connect(mapStateToProps, mapDispatchToProps)(
+  InternalNewBookmark
 )
 
 // $FlowFixMe
-ConnectedNewBookmark.defaultProps = {
+NewBookmark.defaultProps = {
   draft: 'newBookmark'
 }
 
-export default ConnectedNewBookmark
+export default NewBookmark

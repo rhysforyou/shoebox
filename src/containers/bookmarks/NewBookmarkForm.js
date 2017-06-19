@@ -1,14 +1,14 @@
 // @flow
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
-import { commitDraft, discardDraft } from '../actions/drafts'
-import { bookmarkListPath } from '../lib/routeHelpers'
-import BookmarkForm from '../components/bookmarks/BookmarkForm'
+import { commitDraft, discardDraft } from '../../actions/drafts'
+import { bookmarkListPath } from '../../lib/routeHelpers'
+import BookmarkForm from '../../components/bookmarks/BookmarkForm'
 
 import type { Dispatch } from 'redux'
 import type { RouterHistory, Location, Match } from 'react-router'
-import type { State } from '../reducers/types'
-import type { Action } from '../actions/types'
+import type { State } from '../../reducers/types'
+import type { Action } from '../../actions/types'
 
 type OwnProps = {
   draft: string,
@@ -45,6 +45,8 @@ const mapDispatchToProps = (
   }
 })
 
-export default withRouter(
+export const NewBookmarkForm = withRouter(
   connect(mapStateToProps, mapDispatchToProps)(BookmarkForm)
 )
+
+export default NewBookmarkForm

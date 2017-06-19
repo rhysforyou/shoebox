@@ -5,8 +5,7 @@ import { bookmarkAddPath } from '../lib/routeHelpers'
 import { Route, Switch } from 'react-router'
 import Header from './Header'
 import { LinkButton } from './Button'
-import AllBookmarks from '../containers/AllBookmarks'
-import NewBookmark from '../containers/NewBookmark'
+import { AllBookmarks, NewBookmark } from '../containers/bookmarks'
 
 const Container = styled.div`
   max-width: 48rem;
