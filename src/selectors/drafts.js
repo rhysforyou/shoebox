@@ -12,7 +12,12 @@ export const draftExistsSelector = (
 export const currentDraftSelector = (
   state: State,
   { draft }: { draft: string }
-): Draft => state.drafts.get(draft)
+): ?Draft => state.drafts.get(draft)
+
+export const draftEntitySelector = createSelector(
+  currentDraftSelector,
+  (draft): Object => (draft ? draft.entity.toJS() : {})
+)
 
 export const fieldSelector = (
   state: State,
@@ -22,11 +27,12 @@ export const fieldSelector = (
 export const valueSelector = createSelector(
   currentDraftSelector,
   fieldSelector,
-  (draft: Draft, field: string): ?any => draft.entity.get(field)
+  (draft: ?Draft, field: string): ?any => draft && draft.entity.get(field)
 )
 
 export const dirtySelector = createSelector(
   currentDraftSelector,
   fieldSelector,
-  (draft: Draft, field: string): boolean => draft.dirty.get(field) || false
+  (draft: ?Draft, field: string): boolean =>
+    draft ? draft.dirty.get(field) || false : false
 )
