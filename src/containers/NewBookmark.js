@@ -14,8 +14,8 @@ type OwnProps = {
 }
 
 type StateProps = {
-  shouldCreateDraft: boolean,
-  showForm: boolean
+  draftExists: boolean,
+  draftExists: boolean
 }
 
 type DispatchProps = {
@@ -29,29 +29,24 @@ class NewBookmark extends React.PureComponent {
   props: Props
 
   componentWillMount() {
-    if (this.props.shouldCreateDraft) {
+    if (!this.props.draftExists) {
       this.props.createDraft()
     }
   }
 
-  componentWillUnmount() {
-    this.props.discardDraft()
-  }
-
   render() {
-    const { showForm, draft } = this.props
+    const { draftExists, draft } = this.props
 
     return (
       <section id="order-form">
-        {showForm && <NewBookmarkForm draft={draft} />}
+        {draftExists && <NewBookmarkForm draft={draft} />}
       </section>
     )
   }
 }
 
 const mapStateToProps = (state: State, props: OwnProps): StateProps => ({
-  shouldCreateDraft: !draftExistsSelector(state, props),
-  showForm: draftExistsSelector(state, props)
+  draftExists: draftExistsSelector(state, props)
 })
 
 const mapDispatchToProps = (

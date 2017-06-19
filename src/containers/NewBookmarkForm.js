@@ -5,13 +5,15 @@ import { commitDraft } from '../actions/drafts'
 import BookmarkForm from '../components/bookmarks/BookmarkForm'
 
 import type { Dispatch } from 'redux'
-import type { RouterHistory } from 'react-router'
+import type { RouterHistory, Location, Match } from 'react-router'
 import type { State } from '../reducers/types'
 import type { Action } from '../actions/types'
 
 type OwnProps = {
   draft: string,
-  history: RouterHistory
+  history: RouterHistory,
+  location: Location,
+  match: Match
 }
 
 type StateProps = {

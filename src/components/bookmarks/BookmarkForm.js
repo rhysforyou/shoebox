@@ -5,7 +5,7 @@ import DraftTextField from '../../containers/forms/DraftTextField'
 import { SubmitButton } from '../Button'
 
 const Container = styled.div`
-  padding: 0 8rem;
+  padding: 0 1rem;
 
   & > input {
     float: right;

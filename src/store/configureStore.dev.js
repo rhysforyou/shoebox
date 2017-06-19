@@ -14,7 +14,7 @@ const configureStore = () => {
 
   const store = createStore(
     shoebox,
-    composeEnhancers(applyMiddleware(logger, thunk))
+    composeEnhancers(applyMiddleware(thunk, logger))
   )
   return store
 }
