@@ -37,7 +37,7 @@ export const TextField = ({
   onChange: string => any
 }) => (
   <WrappedTextField
-    onChange={(e: InputEvent) => onChange(e.target.value)}
+    onChange={(e: InputEvent) => onChange && onChange(e.target.value)}
     {...props}
   />
 )

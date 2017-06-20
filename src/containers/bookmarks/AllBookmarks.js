@@ -1,7 +1,9 @@
 // @flow
 import { connect } from 'react-redux'
 import { allBookmarksSelector } from '../../selectors/bookmarks'
-import BookmarkList from '../../components/bookmarks/BookmarkList'
+import {
+  AllBookmarks as AllBookmarksComponent
+} from '../../components/bookmarks'
 
 import type { Dispatch } from 'redux'
 import type { State } from '../../reducers/types'
@@ -26,7 +28,7 @@ const mapDispatchToProps = (
 ): DispatchProps => ({})
 
 export const AllBookmarks = connect(mapStateToProps, mapDispatchToProps)(
-  BookmarkList
+  AllBookmarksComponent
 )
 
 export default AllBookmarks

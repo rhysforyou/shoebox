@@ -13,6 +13,7 @@ const configureStore = () => {
   )
 
   persistStore(store, {
+    blacklist: ['drafts'],
     transforms: [immutableTransform({ records: [Draft] })]
   })
 

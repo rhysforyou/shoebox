@@ -82,6 +82,23 @@ exports[`Storyshots BookmarkSummary with image 1`] = `
 </a>
 `;
 
+exports[`Storyshots BookmarkSummary with just a title 1`] = `
+<a
+  className="sc-bdVaJa jnTnQX"
+  href="https://facebook.github.io/react"
+>
+  <div
+    className="sc-bwzfXH kulSxP"
+  >
+    <h2
+      className="sc-htpNat eyraDA"
+    >
+      An Example Bookmark
+    </h2>
+  </div>
+</a>
+`;
+
 exports[`Storyshots BookmarkSummary without image 1`] = `
 <a
   className="sc-bdVaJa jnTnQX"
@@ -219,7 +236,7 @@ exports[`Storyshots Form with the inline style 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="sc-jTzLTM gZPTGI"
+    className="sc-jTzLTM bNUlSs"
   >
     <label
       className="sc-fjdhpX lmuXoa"
@@ -236,13 +253,13 @@ exports[`Storyshots Form with the inline style 1`] = `
     />
   </div>
   <div
-    className="sc-jTzLTM gZPTGI"
+    className="sc-jTzLTM bNUlSs"
   >
     <label
       className="sc-fjdhpX lmuXoa"
       htmlFor="twp"
     >
-      Text Field
+      Text Field With a Long Label
     </label>
     <input
       className="sc-jzJRlG cFivGi"
@@ -253,7 +270,7 @@ exports[`Storyshots Form with the inline style 1`] = `
     />
   </div>
   <div
-    className="sc-jTzLTM gZPTGI"
+    className="sc-jTzLTM bNUlSs"
   >
     <label
       className="sc-fjdhpX lmuXoa"

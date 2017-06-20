@@ -1,21 +1,28 @@
 // @flow
 import React from 'react'
+import { withRouter } from 'react-router'
 import { connect } from 'react-redux'
-import { createDraft, discardDraft } from '../../actions/drafts'
+import { createBookmarkDraft } from '../../actions/bookmarks'
+import { discardDraft } from '../../actions/drafts'
 import {
   draftExistsSelector,
   draftEntitySelector
 } from '../../selectors/drafts'
+import getParams from '../../lib/getParams'
 import NewBookmarkForm from './NewBookmarkForm'
 import BookmarkSummary from '../../components/bookmarks/BookmarkSummary'
 
 import type { Dispatch } from 'redux'
+import type { RouterHistory, Location, Match } from 'react-router'
 import type { State } from '../../reducers/types'
 import type { Action } from '../../actions/types'
 import type { Bookmark } from '../../reducers/bookmarks'
 
 type OwnProps = {
-  draft: string
+  draft: string,
+  history: RouterHistory,
+  location: Location,
+  match: Match
 }
 
 type StateProps = {
@@ -70,21 +77,15 @@ const mapDispatchToProps = (
   dispatch: Dispatch<Action>,
   props: OwnProps
 ): DispatchProps => ({
-  createDraft: () =>
-    dispatch(
-      createDraft(props.draft, {
-        site: '',
-        title: '',
-        url: '',
-        description: '',
-        image: ''
-      })
-    ),
+  createDraft: () => {
+    const searchParams = getParams(props.location.search)
+    return dispatch(createBookmarkDraft(props.draft, searchParams.url))
+  },
   discardDraft: () => dispatch(discardDraft(props.draft))
 })
 
-export const NewBookmark = connect(mapStateToProps, mapDispatchToProps)(
-  InternalNewBookmark
+export const NewBookmark = withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(InternalNewBookmark)
 )
 
 // $FlowFixMe
