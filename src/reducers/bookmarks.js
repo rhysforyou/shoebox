@@ -1,5 +1,6 @@
 // @flow
 import uuid from 'uuid'
+import { Map } from 'immutable'
 
 import type { Action } from '../actions/types'
 
@@ -11,19 +12,16 @@ export type Bookmark = {
   description: string,
   image?: string
 }
-export type State = { [id: string]: Bookmark }
+export type State = Map<string, Bookmark>
 
-function bookmarks(state: State = {}, action: Action): State {
+function bookmarks(state: State = Map(), action: Action): State {
   switch (action.type) {
     case 'COMMIT_DRAFT':
       const bookmark: Bookmark = {
         ...action.entity,
         id: uuid.v4()
       }
-      return {
-        ...state,
-        [bookmark.id]: bookmark
-      }
+      return state.set(bookmark.id, bookmark)
     default:
       return state
   }

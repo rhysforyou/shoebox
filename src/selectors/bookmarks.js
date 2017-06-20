@@ -6,9 +6,9 @@ import type { Bookmark } from '../reducers/bookmarks'
 
 export const bookmarksEntitiesSelector = (
   state: State
-): { [id: string]: Bookmark } => state.entities.bookmarks
+) => state.entities.bookmarks
 
 export const allBookmarksSelector = createSelector(
   bookmarksEntitiesSelector,
-  (bookmarkEntities): Bookmark[] => (Object.values(bookmarkEntities): any)
+  (bookmarkEntities): Bookmark[] => Array.from(bookmarkEntities.values())
 )

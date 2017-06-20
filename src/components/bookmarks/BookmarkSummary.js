@@ -46,6 +46,7 @@ const SiteName = styled.span`
 `
 
 const Thumbnail = styled.img`
+  min-height: 1rem;
   max-height: 5rem;
   width: 5rem;
   margin-right: 1rem;
