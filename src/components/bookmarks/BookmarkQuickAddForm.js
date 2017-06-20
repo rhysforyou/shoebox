@@ -11,7 +11,7 @@ const Form = styled.form`
 
   input { margin-bottom: 0; }
 
-  input[type="text"] { 
+  input[type="text"] {
     flex-grow: 1;
     margin-right: 1rem;
   }
@@ -28,7 +28,7 @@ export const BookmarkQuickAddForm = ({ onChange, onSubmit, url }: Props) => (
     <TextField
       name="url"
       id="url"
-      placeholder="Enter a URL to quikly add a bookmark…"
+      placeholder="Enter a URL to quickly add a bookmark…"
       value={url}
       onChange={onChange}
     />
