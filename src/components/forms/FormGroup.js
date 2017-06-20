@@ -1,5 +1,5 @@
 // @flow
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
 
 export const FormGroup = styled.div`
   display: flex;
@@ -11,14 +11,18 @@ export const FormGroup = styled.div`
     width: 100%;
   }
 
-  ${props => props.inline && css`
-    flex-direction: row;
+  ${props =>
+    props.inline &&
+    css`
+    @media (min-width: 24rem) {
+      flex-direction: row;
 
-    label {
-      width: 10rem;
-      margin-right: 1rem;
-    }
-  `}
+      label {
+        width: 10rem;
+        margin-right: 1rem;
+      }
+    `}
+  }
 `
 
 export default FormGroup

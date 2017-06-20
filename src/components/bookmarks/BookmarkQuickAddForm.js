@@ -15,6 +15,16 @@ const Form = styled.form`
     flex-grow: 1;
     margin-right: 1rem;
   }
+
+
+  @media (max-width: 24rem) {
+    flex-direction: column;
+
+    input[type="text"] {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
 `
 
 type Props = {
@@ -23,7 +33,7 @@ type Props = {
   onSubmit: (event: Event) => any
 }
 
-export const BookmarkQuickAddForm = ({ onChange, onSubmit, url }: Props) => (
+export const BookmarkQuickAddForm = ({ onChange, onSubmit, url }: Props) =>
   <Form onSubmit={onSubmit}>
     <TextField
       name="url"
@@ -34,6 +44,5 @@ export const BookmarkQuickAddForm = ({ onChange, onSubmit, url }: Props) => (
     />
     <SubmitButton primary value="Quick Add" />
   </Form>
-)
 
 export default BookmarkQuickAddForm

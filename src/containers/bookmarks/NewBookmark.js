@@ -54,8 +54,6 @@ class InternalNewBookmark extends React.PureComponent {
 
     return (
       <section id="order-form">
-        <NewBookmarkForm draft={draft} />
-        <h3>Preview</h3>
         <BookmarkSummary
           site={bookmark.site}
           title={bookmark.title}
@@ -63,6 +61,7 @@ class InternalNewBookmark extends React.PureComponent {
           description={bookmark.description}
           image={bookmark.image}
         />
+        <NewBookmarkForm draft={draft} />
       </section>
     )
   }

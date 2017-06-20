@@ -12,12 +12,6 @@ const Container = styled.div`
     float: right;
   }
 `
-
-const Title = styled.h2`
-  margin: 0;
-  padding: 0 0 1rem 9rem;
-`
-
 type Props = {
   draft: string,
   draftExists: boolean,
@@ -37,7 +31,6 @@ export const BookmarkForm = ({
 
   return (
     <Container>
-      <Title>Add Bookmark</Title>
       <Form onSubmit={onSubmit}>
         <FormGroup inline>
           <Label htmlFor="site">Site</Label>
