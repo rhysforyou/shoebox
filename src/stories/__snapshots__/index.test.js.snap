@@ -306,7 +306,7 @@ exports[`Storyshots Form with the inline style 1`] = `
 exports[`Storyshots Header with a child component 1`] = `
 <div>
   <header
-    className="sc-bZQynM hOrPIx"
+    className="sc-bZQynM dtozto"
   >
     <a
       className="sc-gzVnrw PrDPf"
@@ -338,7 +338,7 @@ exports[`Storyshots Header with a child component 1`] = `
 exports[`Storyshots Header with default content 1`] = `
 <div>
   <header
-    className="sc-bZQynM hOrPIx"
+    className="sc-bZQynM dtozto"
   >
     <a
       className="sc-gzVnrw PrDPf"
