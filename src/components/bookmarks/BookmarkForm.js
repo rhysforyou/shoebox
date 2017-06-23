@@ -32,23 +32,23 @@ export const BookmarkForm = ({
   return (
     <Container>
       <Form onSubmit={onSubmit}>
-        <FormGroup inline>
+        <FormGroup>
           <Label htmlFor="site">Site</Label>
           <ConnectedTextField draft={draft} id="site" name="site" />
         </FormGroup>
-        <FormGroup inline>
+        <FormGroup>
           <Label htmlFor="title">Title</Label>
           <ConnectedTextField draft={draft} id="title" name="title" />
         </FormGroup>
-        <FormGroup inline>
+        <FormGroup>
           <Label htmlFor="url">URL</Label>
           <ConnectedTextField draft={draft} id="url" name="url" />
         </FormGroup>
-        <FormGroup inline>
+        <FormGroup>
           <Label htmlFor="image">Image</Label>
           <ConnectedTextField draft={draft} id="image" name="image" />
         </FormGroup>
-        <FormGroup inline>
+        <FormGroup>
           <Label htmlFor="description">Description</Label>
           <ConnectedTextField
             draft={draft}

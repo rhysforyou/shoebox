@@ -1,27 +1,16 @@
 // @flow
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const FormGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+  display: contents;
 
   input {
-    flex-grow: 1;
     width: 100%;
   }
-
-  ${props =>
-    props.inline &&
-    css`
-    @media (min-width: 24rem) {
-      flex-direction: row;
-
-      label {
-        width: 10rem;
-        margin-right: 1rem;
-      }
-    `}
+  
+  label {
+    line-height: 42px;
+    text-align: right;
   }
 `
 

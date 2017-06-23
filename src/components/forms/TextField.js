@@ -12,7 +12,6 @@ const WrappedTextField = styled.input.attrs({
   font-size: 1rem;
   border: 2px solid #eee;
   padding: 0.6rem;
-  margin-bottom: 1rem;
   border-radius: 3px;
   outline: none;
   box-sizing: border-box;
