@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { ConnectedTextField } from '../../containers/forms'
 import { Button, SubmitButton } from '../Button'
-import { Form, FormGroup, FormActions, Label } from '../forms'
+import { Form, FormActions, Label } from '../forms'
 
 const Container = styled.div`
   padding: 1rem;
@@ -32,30 +32,22 @@ export const BookmarkForm = ({
   return (
     <Container>
       <Form onSubmit={onSubmit}>
-        <FormGroup>
-          <Label htmlFor="site">Site</Label>
-          <ConnectedTextField draft={draft} id="site" name="site" />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor="title">Title</Label>
-          <ConnectedTextField draft={draft} id="title" name="title" />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor="url">URL</Label>
-          <ConnectedTextField draft={draft} id="url" name="url" />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor="image">Image</Label>
-          <ConnectedTextField draft={draft} id="image" name="image" />
-        </FormGroup>
-        <FormGroup>
-          <Label htmlFor="description">Description</Label>
-          <ConnectedTextField
-            draft={draft}
-            id="description"
-            name="description"
-          />
-        </FormGroup>
+
+        <Label htmlFor="site">Site</Label>
+        <ConnectedTextField draft={draft} id="site" name="site" />
+
+        <Label htmlFor="title">Title</Label>
+        <ConnectedTextField draft={draft} id="title" name="title" />
+
+        <Label htmlFor="url">URL</Label>
+        <ConnectedTextField draft={draft} id="url" name="url" />
+
+        <Label htmlFor="image">Image</Label>
+        <ConnectedTextField draft={draft} id="image" name="image" />
+
+        <Label htmlFor="description">Description</Label>
+        <ConnectedTextField draft={draft} id="description" name="description" />
+
         <FormActions>
           <Button onClick={onCancel}>Cancel</Button>
           <SubmitButton primary value="Add Bookmark" />
