@@ -13,7 +13,7 @@ export const FormActions = styled.div`
     }
   }
 
-  @media (max-width: 24rem) {
+  @media (max-width: 32rem) {
     flex-direction: column-reverse;
 
     button, input[type="submit"] {

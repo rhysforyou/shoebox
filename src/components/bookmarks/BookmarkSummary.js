@@ -51,7 +51,7 @@ const Thumbnail = styled.img`
   width: 5rem;
   margin-right: 1rem;
 
-  @media (max-width: 24rem) {
+  @media (max-width: 32rem) {
     max-width: 4rem;
   }
 `

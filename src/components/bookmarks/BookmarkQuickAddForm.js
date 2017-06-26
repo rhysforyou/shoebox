@@ -17,7 +17,7 @@ const Form = styled.form`
   }
 
 
-  @media (max-width: 24rem) {
+  @media (max-width: 32rem) {
     flex-direction: column;
 
     input[type="text"] {

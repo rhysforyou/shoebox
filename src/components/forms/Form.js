@@ -14,5 +14,19 @@ export const Form = styled.form`
     line-height: 42px;
     text-align: right;
   }
+
+  @media (max-width: 32rem) {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      line-height: inherit;
+      text-align: inherit;
+    }
+
+    input[type="text"] {
+      margin: 0.4rem 0 1rem;
+    }
+  }
 `
 export default Form

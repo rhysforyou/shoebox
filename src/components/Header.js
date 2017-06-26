@@ -10,7 +10,7 @@ const Container = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 24rem) {
+  @media (max-width: 32rem) {
     flex-direction: column;
   }
 `

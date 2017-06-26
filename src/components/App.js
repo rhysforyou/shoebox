@@ -15,6 +15,7 @@ const App = () =>
     <Header />
     <Switch>
       <Route exact path="/" component={AllBookmarks} />
+      <Route exact path="/all" component={AllBookmarks} />
       <Route path="/add" component={NewBookmark} />
     </Switch>
   </Container>
