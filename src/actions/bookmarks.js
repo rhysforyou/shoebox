@@ -20,13 +20,13 @@ export function createBookmarkDraft(name: string, url: ?string): Thunk {
         headers: new Headers({ 'Content-Type': 'application/json' })
       })
         .then(res => res.json())
-        .then(metadata => dispatch(createDraft(name, metadata)))
+        .then(metadata => dispatch(createDraft(name, metadata, 'bookmark')))
         .catch(err => {
           console.error(err)
-          dispatch(createDraft(name, bookmark))
+          dispatch(createDraft(name, bookmark, 'bookmark'))
         })
     } else {
-      dispatch(createDraft(name, bookmark))
+      dispatch(createDraft(name, bookmark, 'bookmark'))
     }
   }
 }

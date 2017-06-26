@@ -1,5 +1,4 @@
 // @flow
-import uuid from 'uuid'
 import { Map } from 'immutable'
 
 import type { Action } from '../actions/types'
@@ -19,9 +18,9 @@ function bookmarks(state: State = Map(), action: Action): State {
     case 'COMMIT_DRAFT':
       const bookmark: Bookmark = {
         ...action.entity,
-        id: uuid.v4()
+        id: action.id
       }
-      return state.set(bookmark.id, bookmark)
+      return state.set(action.id, bookmark)
     default:
       return state
   }

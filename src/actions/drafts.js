@@ -1,10 +1,17 @@
 // @flow
-import type { Action, Thunk } from './types'
+import uuid from 'uuid'
 
-export function createDraft(name: string, entity: Object): Action {
+import type { Action, Thunk, EntityType } from './types'
+
+export function createDraft(
+  name: string,
+  entity: Object,
+  entityType: EntityType
+): Action {
   return {
     type: 'CREATE_DRAFT',
     name,
+    entityType,
     entity
   }
 }
@@ -30,7 +37,9 @@ export function commitDraft(name: string): Thunk {
     dispatch({
       type: 'COMMIT_DRAFT',
       name: name,
-      entity: draft.get('entity').toJS()
+      id: uuid.v4(),
+      entityType: draft.entityType,
+      entity: draft.entity.toJS()
     })
   }
 }

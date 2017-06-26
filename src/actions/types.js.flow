@@ -2,10 +2,13 @@
 import type { Dispatch } from 'redux'
 import type { State } from '../reducers/types'
 
+export type EntityType = 'bookmark'
+
 export type Action =
   | {|
       type: 'CREATE_DRAFT',
       name: string,
+      entityType: EntityType,
       entity: Object
     |}
   | {|
@@ -17,7 +20,9 @@ export type Action =
     |}
   | {|
       type: 'COMMIT_DRAFT',
+      id: string,
       name: string,
+      entityType: EntityType,
       entity: Object
     |}
   | {|
