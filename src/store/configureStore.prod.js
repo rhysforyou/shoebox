@@ -4,6 +4,7 @@ import thunk from 'redux-thunk'
 import { persistStore, autoRehydrate } from 'redux-persist'
 import immutableTransform from 'redux-persist-transform-immutable'
 import Draft from '../lib/draft'
+import Bookmark from '../lib/bookmark'
 import demoApp from '../reducers/shoebox'
 
 const configureStore = () => {
@@ -14,7 +15,7 @@ const configureStore = () => {
 
   persistStore(store, {
     blacklist: ['drafts'],
-    transforms: [immutableTransform({ records: [Draft] })]
+    transforms: [immutableTransform({ records: [Draft, Bookmark] })]
   })
 
   return store

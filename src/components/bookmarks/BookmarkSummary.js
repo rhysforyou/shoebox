@@ -70,11 +70,11 @@ const Description = styled.div`
 `
 
 type Props = {
-  site?: string,
   title: string,
-  description?: string,
   url: string,
-  image?: string
+  site: ?string,
+  description: ?string,
+  image: ?string
 }
 
 export const BookmarkSummary = ({

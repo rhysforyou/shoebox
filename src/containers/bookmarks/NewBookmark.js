@@ -16,7 +16,7 @@ import type { Dispatch } from 'redux'
 import type { RouterHistory, Location, Match } from 'react-router'
 import type { State } from '../../reducers/types'
 import type { Action } from '../../actions/types'
-import type { Bookmark } from '../../reducers/bookmarks'
+import type Bookmark from '../../lib/bookmark'
 
 type OwnProps = {
   draft: string,
@@ -53,6 +53,7 @@ class InternalNewBookmark extends React.PureComponent {
 
   render() {
     const { draftExists, draft, bookmark } = this.props
+
     if (!draftExists) {
       return <span>Loading…</span>
     }
