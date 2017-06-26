@@ -41,7 +41,12 @@ class InternalNewBookmark extends React.PureComponent {
   props: Props
 
   componentWillMount() {
+    const searchParams = getParams(this.props.location.search)
+
     if (!this.props.draftExists) {
+      this.props.createDraft()
+    } else if (searchParams.hasOwnProperty('url')) {
+      this.props.discardDraft()
       this.props.createDraft()
     }
   }
