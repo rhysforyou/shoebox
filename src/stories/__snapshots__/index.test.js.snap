@@ -159,20 +159,20 @@ exports[`Storyshots Button with the primary style 1`] = `
 
 exports[`Storyshots Form with the default appearance 1`] = `
 <form
-  className="sc-gqjmRU gKJxEj"
+  className="sc-gqjmRU kSMixh"
   onSubmit={[Function]}
 >
   <div
-    className="sc-jTzLTM geuoSm"
+    className="sc-jTzLTM jCOfqE"
   >
     <label
-      className="sc-fjdhpX lmuXoa"
+      className="sc-fjdhpX bGmrAh"
       htmlFor="one"
     >
       Text Field
     </label>
     <input
-      className="sc-jzJRlG duvAuD"
+      className="sc-jzJRlG byNtWd"
       id="ome"
       onChange={[Function]}
       placeholder="Placeholder"
@@ -180,16 +180,16 @@ exports[`Storyshots Form with the default appearance 1`] = `
     />
   </div>
   <div
-    className="sc-jTzLTM geuoSm"
+    className="sc-jTzLTM jCOfqE"
   >
     <label
-      className="sc-fjdhpX lmuXoa"
+      className="sc-fjdhpX bGmrAh"
       htmlFor="twp"
     >
       Text Field
     </label>
     <input
-      className="sc-jzJRlG duvAuD"
+      className="sc-jzJRlG byNtWd"
       id="twp"
       onChange={[Function]}
       placeholder="Placeholder"
@@ -197,16 +197,16 @@ exports[`Storyshots Form with the default appearance 1`] = `
     />
   </div>
   <div
-    className="sc-jTzLTM geuoSm"
+    className="sc-jTzLTM jCOfqE"
   >
     <label
-      className="sc-fjdhpX lmuXoa"
+      className="sc-fjdhpX bGmrAh"
       htmlFor="three"
     >
       Text Field
     </label>
     <input
-      className="sc-jzJRlG duvAuD"
+      className="sc-jzJRlG byNtWd"
       id="three"
       onChange={[Function]}
       placeholder="Placeholder"
@@ -214,7 +214,7 @@ exports[`Storyshots Form with the default appearance 1`] = `
     />
   </div>
   <div
-    className="sc-VigVT fxVZtQ"
+    className="sc-VigVT iwqiEU"
   >
     <button
       className="sc-dnqmqq cXiVsV"
@@ -232,20 +232,20 @@ exports[`Storyshots Form with the default appearance 1`] = `
 
 exports[`Storyshots Form with the inline style 1`] = `
 <form
-  className="sc-gqjmRU gKJxEj"
+  className="sc-gqjmRU kSMixh"
   onSubmit={[Function]}
 >
   <div
-    className="sc-jTzLTM fGLQVH"
+    className="sc-jTzLTM jCOfqE"
   >
     <label
-      className="sc-fjdhpX lmuXoa"
+      className="sc-fjdhpX bGmrAh"
       htmlFor="one"
     >
       Text Field
     </label>
     <input
-      className="sc-jzJRlG duvAuD"
+      className="sc-jzJRlG byNtWd"
       id="ome"
       onChange={[Function]}
       placeholder="Placeholder"
@@ -253,16 +253,16 @@ exports[`Storyshots Form with the inline style 1`] = `
     />
   </div>
   <div
-    className="sc-jTzLTM fGLQVH"
+    className="sc-jTzLTM jCOfqE"
   >
     <label
-      className="sc-fjdhpX lmuXoa"
+      className="sc-fjdhpX bGmrAh"
       htmlFor="twp"
     >
       Text Field With a Long Label
     </label>
     <input
-      className="sc-jzJRlG duvAuD"
+      className="sc-jzJRlG byNtWd"
       id="twp"
       onChange={[Function]}
       placeholder="Placeholder"
@@ -270,16 +270,16 @@ exports[`Storyshots Form with the inline style 1`] = `
     />
   </div>
   <div
-    className="sc-jTzLTM fGLQVH"
+    className="sc-jTzLTM jCOfqE"
   >
     <label
-      className="sc-fjdhpX lmuXoa"
+      className="sc-fjdhpX bGmrAh"
       htmlFor="three"
     >
       Text Field
     </label>
     <input
-      className="sc-jzJRlG duvAuD"
+      className="sc-jzJRlG byNtWd"
       id="three"
       onChange={[Function]}
       placeholder="Placeholder"
@@ -287,7 +287,7 @@ exports[`Storyshots Form with the inline style 1`] = `
     />
   </div>
   <div
-    className="sc-VigVT fxVZtQ"
+    className="sc-VigVT iwqiEU"
   >
     <button
       className="sc-dnqmqq cXiVsV"
@@ -401,7 +401,7 @@ exports[`Storyshots LinkButton with the primary style 1`] = `
 
 exports[`Storyshots TextField with placeholder 1`] = `
 <input
-  className="sc-jzJRlG duvAuD"
+  className="sc-jzJRlG byNtWd"
   onChange={[Function]}
   placeholder="A placeholder"
   type="text"
@@ -410,7 +410,7 @@ exports[`Storyshots TextField with placeholder 1`] = `
 
 exports[`Storyshots TextField with the block style 1`] = `
 <input
-  className="sc-jzJRlG bXNIit"
+  className="sc-jzJRlG bLCtQE"
   onChange={[Function]}
   type="text"
 />
@@ -418,7 +418,7 @@ exports[`Storyshots TextField with the block style 1`] = `
 
 exports[`Storyshots TextField with the default style 1`] = `
 <input
-  className="sc-jzJRlG duvAuD"
+  className="sc-jzJRlG byNtWd"
   onChange={[Function]}
   type="text"
 />
@@ -426,7 +426,7 @@ exports[`Storyshots TextField with the default style 1`] = `
 
 exports[`Storyshots TextField with value 1`] = `
 <input
-  className="sc-jzJRlG duvAuD"
+  className="sc-jzJRlG byNtWd"
   onChange={[Function]}
   type="text"
   value="A value"
