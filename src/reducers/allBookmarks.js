@@ -2,7 +2,7 @@
 import { List } from 'immutable'
 import type { Action } from '../actions/types'
 
-type State = List<string>
+export type State = List<string>
 
 export default function allBookmarks(
   state: State = List(),
