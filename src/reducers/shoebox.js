@@ -10,7 +10,7 @@ import type { Action } from '../actions/types'
 const shoebox: (state: State, action: Action) => State = combineReducers({
   entities: combineReducers({ bookmarks }),
   drafts,
-  allBookmarks
+  lists: combineReducers({ allBookmarks })
 })
 
 export default shoebox

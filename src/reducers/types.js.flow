@@ -7,6 +7,8 @@ export type State = {
   entities: {
     bookmarks: BookmarksState
   },
-  drafts: DraftsState,
-  allBookmarks: AllBookmarksState
+  lists: {
+    allBookmarks: AllBookmarksState
+  },
+  drafts: DraftsState
 }

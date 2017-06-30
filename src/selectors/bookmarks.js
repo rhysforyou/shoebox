@@ -12,7 +12,8 @@ export const bookmarkIdPropSelector = (
   props: { bookmarkId: string }
 ): string => props.bookmarkId
 
-export const allBookmarksSelector = (state: State) => state.allBookmarks.toJS()
+export const allBookmarksSelector = (state: State) =>
+  state.lists.allBookmarks.toJS()
 
 export const selectedBookmarkSelector = createSelector(
   bookmarksEntitiesSelector,
