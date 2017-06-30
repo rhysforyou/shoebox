@@ -2,28 +2,28 @@
 
 exports[`Storyshots BookmarkSummary with Markdown content 1`] = `
 <a
-  className="sc-bdVaJa jnTnQX"
+  className="sc-iwsKbI Wzhbg"
   href="https://facebook.github.io/react"
 >
   <img
-    className="sc-ifAKCX iJrrw"
+    className="sc-jTzLTM gzteyq"
     src="https://facebook.github.io/react/img/logo_og.png"
   />
   <div
-    className="sc-bwzfXH kulSxP"
+    className="sc-gZMcBi crAViM"
   >
     <h2
-      className="sc-htpNat eyraDA"
+      className="sc-gqjmRU kdrkId"
     >
       An Example Bookmark
     </h2>
     <span
-      className="sc-bxivhb dNmQiw"
+      className="sc-VigVT iiWudf"
     >
       An Example Website
     </span>
     <div
-      className="sc-EHOje cZVPQR"
+      className="sc-fjdhpX kRhPox"
       dangerouslySetInnerHTML={
         Object {
           "__html": "<p>Bookmark descriptions can be provided as <strong>Markdown</strong>, and the component should <em>properly</em> format them.</p>
@@ -49,28 +49,28 @@ exports[`Storyshots BookmarkSummary with Markdown content 1`] = `
 
 exports[`Storyshots BookmarkSummary with image 1`] = `
 <a
-  className="sc-bdVaJa jnTnQX"
+  className="sc-iwsKbI Wzhbg"
   href="https://facebook.github.io/react"
 >
   <img
-    className="sc-ifAKCX iJrrw"
+    className="sc-jTzLTM gzteyq"
     src="https://facebook.github.io/react/img/logo_og.png"
   />
   <div
-    className="sc-bwzfXH kulSxP"
+    className="sc-gZMcBi crAViM"
   >
     <h2
-      className="sc-htpNat eyraDA"
+      className="sc-gqjmRU kdrkId"
     >
       An Example Bookmark
     </h2>
     <span
-      className="sc-bxivhb dNmQiw"
+      className="sc-VigVT iiWudf"
     >
       An Example Website
     </span>
     <div
-      className="sc-EHOje cZVPQR"
+      className="sc-fjdhpX kRhPox"
       dangerouslySetInnerHTML={
         Object {
           "__html": "<p>This is an example of what a bookmrk with an image might look like</p>
@@ -84,14 +84,14 @@ exports[`Storyshots BookmarkSummary with image 1`] = `
 
 exports[`Storyshots BookmarkSummary with just a title 1`] = `
 <a
-  className="sc-bdVaJa jnTnQX"
+  className="sc-iwsKbI Wzhbg"
   href="https://facebook.github.io/react"
 >
   <div
-    className="sc-bwzfXH kulSxP"
+    className="sc-gZMcBi crAViM"
   >
     <h2
-      className="sc-htpNat eyraDA"
+      className="sc-gqjmRU kdrkId"
     >
       An Example Bookmark
     </h2>
@@ -101,24 +101,24 @@ exports[`Storyshots BookmarkSummary with just a title 1`] = `
 
 exports[`Storyshots BookmarkSummary without image 1`] = `
 <a
-  className="sc-bdVaJa jnTnQX"
+  className="sc-iwsKbI Wzhbg"
   href="https://facebook.github.io/react"
 >
   <div
-    className="sc-bwzfXH kulSxP"
+    className="sc-gZMcBi crAViM"
   >
     <h2
-      className="sc-htpNat eyraDA"
+      className="sc-gqjmRU kdrkId"
     >
       An Example Bookmark
     </h2>
     <span
-      className="sc-bxivhb dNmQiw"
+      className="sc-VigVT iiWudf"
     >
       An Example Website
     </span>
     <div
-      className="sc-EHOje cZVPQR"
+      className="sc-fjdhpX kRhPox"
       dangerouslySetInnerHTML={
         Object {
           "__html": "<p>This is an example of what a bookmrk without an image might look like</p>
@@ -132,7 +132,7 @@ exports[`Storyshots BookmarkSummary without image 1`] = `
 
 exports[`Storyshots Button with the block style 1`] = `
 <button
-  className="sc-dnqmqq bowFde"
+  className="sc-bxivhb bRjMOY"
   onClick={[Function]}
 >
   Button
@@ -141,7 +141,7 @@ exports[`Storyshots Button with the block style 1`] = `
 
 exports[`Storyshots Button with the default style 1`] = `
 <button
-  className="sc-dnqmqq cXiVsV"
+  className="sc-bxivhb ckxcZb"
   onClick={[Function]}
 >
   Button
@@ -150,7 +150,7 @@ exports[`Storyshots Button with the default style 1`] = `
 
 exports[`Storyshots Button with the primary style 1`] = `
 <button
-  className="sc-dnqmqq cIJJLo"
+  className="sc-bxivhb jIjOxN"
   onClick={[Function]}
 >
   Button
@@ -159,58 +159,58 @@ exports[`Storyshots Button with the primary style 1`] = `
 
 exports[`Storyshots Form with the default appearance 1`] = `
 <form
-  className="sc-gqjmRU huaQJC"
+  className="sc-bZQynM eyjNyA"
   onSubmit={[Function]}
 >
   <label
-    className="sc-jTzLTM iDtNrU"
+    className="sc-htoDjs fIdUGm"
     htmlFor="one"
   >
     Text Field
   </label>
   <input
-    className="sc-fjdhpX gOYlpd"
+    className="sc-dnqmqq jxroDZ"
     id="ome"
     onChange={[Function]}
     placeholder="Placeholder"
     type="text"
   />
   <label
-    className="sc-jTzLTM iDtNrU"
+    className="sc-htoDjs fIdUGm"
     htmlFor="twp"
   >
     Text Field
   </label>
   <input
-    className="sc-fjdhpX gOYlpd"
+    className="sc-dnqmqq jxroDZ"
     id="twp"
     onChange={[Function]}
     placeholder="Placeholder"
     type="text"
   />
   <label
-    className="sc-jTzLTM iDtNrU"
+    className="sc-htoDjs fIdUGm"
     htmlFor="three"
   >
     Text Field
   </label>
   <input
-    className="sc-fjdhpX gOYlpd"
+    className="sc-dnqmqq jxroDZ"
     id="three"
     onChange={[Function]}
     placeholder="Placeholder"
     type="text"
   />
   <div
-    className="sc-VigVT TlvUx"
+    className="sc-gzVnrw foisEm"
   >
     <button
-      className="sc-dnqmqq cXiVsV"
+      className="sc-bxivhb ckxcZb"
     >
       Cancel
     </button>
     <input
-      className="sc-gZMcBi lonrRe"
+      className="sc-EHOje hzHnHp"
       type="submit"
       value="Submit"
     />
@@ -221,15 +221,15 @@ exports[`Storyshots Form with the default appearance 1`] = `
 exports[`Storyshots Header with a child component 1`] = `
 <div>
   <header
-    className="sc-bZQynM fuRSQZ"
+    className="sc-bdVaJa dUaFNN"
   >
     <a
-      className="sc-gzVnrw PrDPf"
+      className="sc-bwzfXH jYxuAL"
       href="/"
       onClick={[Function]}
     >
       <span
-        className="sc-htoDjs jgDVio"
+        className="sc-htpNat jLuPGr"
       >
         <span
           aria-label="logo"
@@ -241,7 +241,7 @@ exports[`Storyshots Header with a child component 1`] = `
        Shoebox
     </a>
     <button
-      className="sc-dnqmqq cXiVsV"
+      className="sc-bxivhb ckxcZb"
       to="/add"
     >
       Add Bookmark
@@ -253,15 +253,15 @@ exports[`Storyshots Header with a child component 1`] = `
 exports[`Storyshots Header with default content 1`] = `
 <div>
   <header
-    className="sc-bZQynM fuRSQZ"
+    className="sc-bdVaJa dUaFNN"
   >
     <a
-      className="sc-gzVnrw PrDPf"
+      className="sc-bwzfXH jYxuAL"
       href="/"
       onClick={[Function]}
     >
       <span
-        className="sc-htoDjs jgDVio"
+        className="sc-htpNat jLuPGr"
       >
         <span
           aria-label="logo"
@@ -280,7 +280,7 @@ exports[`Storyshots LinkButton with the block style 1`] = `
 <div>
   <a
     block={true}
-    className="sc-iwsKbI ePeFzy"
+    className="sc-ifAKCX ESEFj"
     href="#"
     onClick={[Function]}
   >
@@ -292,7 +292,7 @@ exports[`Storyshots LinkButton with the block style 1`] = `
 exports[`Storyshots LinkButton with the default style 1`] = `
 <div>
   <a
-    className="sc-iwsKbI loSlie"
+    className="sc-ifAKCX fKfUFj"
     href="#"
     onClick={[Function]}
   >
@@ -304,7 +304,7 @@ exports[`Storyshots LinkButton with the default style 1`] = `
 exports[`Storyshots LinkButton with the primary style 1`] = `
 <div>
   <a
-    className="sc-iwsKbI cZqdBm"
+    className="sc-ifAKCX icFhT"
     href="#"
     onClick={[Function]}
     primary={true}
@@ -316,7 +316,7 @@ exports[`Storyshots LinkButton with the primary style 1`] = `
 
 exports[`Storyshots TextField with placeholder 1`] = `
 <input
-  className="sc-fjdhpX gOYlpd"
+  className="sc-dnqmqq jxroDZ"
   onChange={[Function]}
   placeholder="A placeholder"
   type="text"
@@ -325,7 +325,7 @@ exports[`Storyshots TextField with placeholder 1`] = `
 
 exports[`Storyshots TextField with the block style 1`] = `
 <input
-  className="sc-fjdhpX bwdAjE"
+  className="sc-dnqmqq fYvOud"
   onChange={[Function]}
   type="text"
 />
@@ -333,7 +333,7 @@ exports[`Storyshots TextField with the block style 1`] = `
 
 exports[`Storyshots TextField with the default style 1`] = `
 <input
-  className="sc-fjdhpX gOYlpd"
+  className="sc-dnqmqq jxroDZ"
   onChange={[Function]}
   type="text"
 />
@@ -341,7 +341,7 @@ exports[`Storyshots TextField with the default style 1`] = `
 
 exports[`Storyshots TextField with value 1`] = `
 <input
-  className="sc-fjdhpX gOYlpd"
+  className="sc-dnqmqq jxroDZ"
   onChange={[Function]}
   type="text"
   value="A value"
