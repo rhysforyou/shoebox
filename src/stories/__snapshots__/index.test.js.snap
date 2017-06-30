@@ -221,7 +221,7 @@ exports[`Storyshots Form with the default appearance 1`] = `
 exports[`Storyshots Header with a child component 1`] = `
 <div>
   <header
-    className="sc-bZQynM icBvkw"
+    className="sc-bZQynM fuRSQZ"
   >
     <a
       className="sc-gzVnrw PrDPf"
@@ -253,7 +253,7 @@ exports[`Storyshots Header with a child component 1`] = `
 exports[`Storyshots Header with default content 1`] = `
 <div>
   <header
-    className="sc-bZQynM icBvkw"
+    className="sc-bZQynM fuRSQZ"
   >
     <a
       className="sc-gzVnrw PrDPf"
