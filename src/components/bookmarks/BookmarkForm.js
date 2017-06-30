@@ -32,7 +32,6 @@ export const BookmarkForm = ({
   return (
     <Container>
       <Form onSubmit={onSubmit}>
-
         <Label htmlFor="site">Site</Label>
         <ConnectedTextField draft={draft} id="site" name="site" />
 
@@ -47,6 +46,9 @@ export const BookmarkForm = ({
 
         <Label htmlFor="description">Description</Label>
         <ConnectedTextField draft={draft} id="description" name="description" />
+
+        <Label htmlFor="description">Tags</Label>
+        <ConnectedTextField draft={draft} id="tags" name="tags" />
 
         <FormActions>
           <Button onClick={onCancel}>Cancel</Button>

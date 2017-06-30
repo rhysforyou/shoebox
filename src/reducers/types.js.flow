@@ -1,11 +1,13 @@
 // @flow
 import type { State as BookmarksState } from './bookmarks'
+import type { State as TagsState } from './tags'
 import type { State as DraftsState } from './drafts'
 import type { State as AllBookmarksState } from './allBookmarks'
 
 export type State = {
   entities: {
-    bookmarks: BookmarksState
+    bookmarks: BookmarksState,
+    tags: TagsState
   },
   lists: {
     allBookmarks: AllBookmarksState

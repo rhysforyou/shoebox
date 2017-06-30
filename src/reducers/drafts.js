@@ -8,7 +8,6 @@ export type State = Map<string, Draft>
 const draftEntities = (state: State = Map(), action: Action): State => {
   switch (action.type) {
     case 'CREATE_DRAFT':
-      if (action.entityType !== 'bookmark') return state
       return state.set(
         action.name,
         new Draft({

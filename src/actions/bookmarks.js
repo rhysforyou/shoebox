@@ -10,7 +10,8 @@ export function createBookmarkDraft(name: string, url: ?string): Thunk {
       title: '',
       url: url || '',
       description: '',
-      image: ''
+      image: '',
+      tags: ''
     }
 
     if (url && url.length > 0) {
