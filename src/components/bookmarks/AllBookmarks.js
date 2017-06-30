@@ -1,12 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
 import { BookmarkQuickAdd } from '../../containers/bookmarks'
 import BookmarkList from './BookmarkList'
 
-export const AllBookmarks = ({ bookmarks }) => (
-  <div>
+const Container = styled.div`
+  grid-area: content;
+`
+
+export const AllBookmarks = ({ bookmarks }) =>
+  <Container>
     <BookmarkQuickAdd />
     <BookmarkList bookmarks={bookmarks} />
-  </div>
-)
+  </Container>
 
 export default AllBookmarks

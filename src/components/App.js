@@ -6,8 +6,24 @@ import Header from './Header'
 import { AllBookmarks, NewBookmark } from '../containers/bookmarks'
 
 const Container = styled.div`
-  max-width: 48rem;
+  max-width: 64rem;
   margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 16rem;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "header header"
+    "content sidebar";
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content";
+  }
 `
 
 const App = () =>

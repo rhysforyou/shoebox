@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Shoebox",
+  "name": "Shoebox - Simple, Rich Bookmarking",
   "icons": [
     {
       "src": "favicon.ico",

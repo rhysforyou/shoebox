@@ -6,7 +6,7 @@ exports[`Storyshots BookmarkSummary with Markdown content 1`] = `
   href="https://facebook.github.io/react"
 >
   <img
-    className="sc-ifAKCX ghHebx"
+    className="sc-ifAKCX iJrrw"
     src="https://facebook.github.io/react/img/logo_og.png"
   />
   <div
@@ -53,7 +53,7 @@ exports[`Storyshots BookmarkSummary with image 1`] = `
   href="https://facebook.github.io/react"
 >
   <img
-    className="sc-ifAKCX ghHebx"
+    className="sc-ifAKCX iJrrw"
     src="https://facebook.github.io/react/img/logo_og.png"
   />
   <div
@@ -159,7 +159,7 @@ exports[`Storyshots Button with the primary style 1`] = `
 
 exports[`Storyshots Form with the default appearance 1`] = `
 <form
-  className="sc-gqjmRU ghIElL"
+  className="sc-gqjmRU huaQJC"
   onSubmit={[Function]}
 >
   <label
@@ -202,7 +202,7 @@ exports[`Storyshots Form with the default appearance 1`] = `
     type="text"
   />
   <div
-    className="sc-VigVT iwqiEU"
+    className="sc-VigVT TlvUx"
   >
     <button
       className="sc-dnqmqq cXiVsV"
@@ -221,7 +221,7 @@ exports[`Storyshots Form with the default appearance 1`] = `
 exports[`Storyshots Header with a child component 1`] = `
 <div>
   <header
-    className="sc-bZQynM dtozto"
+    className="sc-bZQynM icBvkw"
   >
     <a
       className="sc-gzVnrw PrDPf"
@@ -253,7 +253,7 @@ exports[`Storyshots Header with a child component 1`] = `
 exports[`Storyshots Header with default content 1`] = `
 <div>
   <header
-    className="sc-bZQynM dtozto"
+    className="sc-bZQynM icBvkw"
   >
     <a
       className="sc-gzVnrw PrDPf"
