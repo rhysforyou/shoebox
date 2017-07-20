@@ -34,5 +34,5 @@ export const dirtySelector = createSelector(
   currentDraftSelector,
   fieldSelector,
   (draft: ?Draft, field: string): boolean =>
-    (draft ? draft.dirty.get(field) || false : false)
+    draft ? draft.dirty.get(field) || false : false
 )

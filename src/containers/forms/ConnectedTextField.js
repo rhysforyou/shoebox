@@ -1,13 +1,13 @@
 // @flow
-import { connect } from "react-redux"
-import { updateDraft as updateDraftAction } from "../../actions/drafts"
-import TextField from "../../components/forms/TextField"
-import debounceInput from "../debounceInput"
-import { valueSelector } from "../../selectors/drafts"
+import { connect } from 'react-redux'
+import { updateDraft as updateDraftAction } from '../../actions/drafts'
+import TextField from '../../components/forms/TextField'
+import debounceInput from '../debounceInput'
+import { valueSelector } from '../../selectors/drafts'
 
-import type { Dispatch } from "redux"
-import type { State } from "../../reducers/types"
-import type { Action } from "../../actions/types"
+import type { Dispatch } from 'redux'
+import type { State } from '../../reducers/types'
+import type { Action } from '../../actions/types'
 
 type OwnProps = {
   draft: string,
@@ -24,7 +24,7 @@ type DispatchProps = {
 }
 
 const mapStateToProps = (state: State, props: OwnProps): StateProps => ({
-  value: valueSelector(state, props) || ""
+  value: valueSelector(state, props) || ''
 })
 
 const mapDispatchToProps = (

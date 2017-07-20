@@ -9,13 +9,14 @@ const Form = styled.form`
   flex-direction: row;
   padding: 1rem;
 
-  input { margin-bottom: 0; }
+  input {
+    margin-bottom: 0;
+  }
 
   input[type="text"] {
     flex-grow: 1;
     margin-right: 1rem;
   }
-
 
   @media (max-width: 32rem) {
     flex-direction: column;

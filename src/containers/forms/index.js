@@ -1,2 +1,2 @@
 // @flow
-export { ConnectedTextField } from "./ConnectedTextField"
+export { ConnectedTextField } from './ConnectedTextField'

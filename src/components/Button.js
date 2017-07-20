@@ -46,9 +46,7 @@ const sharedStyles = css`
 	`}
 `
 
-export const Button = styled.button`
-	${sharedStyles}
-`
+export const Button = styled.button`${sharedStyles};`
 
 export const LinkButton = styled(Link)`
 ${sharedStyles}

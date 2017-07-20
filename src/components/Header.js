@@ -32,7 +32,12 @@ const Logo = styled.span`
 const Header = ({ children }: { children?: React$Element<*> }) =>
   <Container>
     <TitleLink to="/">
-      <Logo><span role="img" aria-label="logo">📥</span></Logo> Shoebox
+      <Logo>
+        <span role="img" aria-label="logo">
+          📥
+        </span>
+      </Logo>{' '}
+      Shoebox
     </TitleLink>
     {children}
   </Container>

@@ -19,7 +19,7 @@ const LinkedContainer = styled.a`
   }
 
   &:hover {
-    background: #E5F1FF;
+    background: #e5f1ff;
     color: white;
   }
 `
@@ -34,7 +34,7 @@ const Title = styled.h2`
   font-weight: 600;
   margin: 0;
   display: inline-block;
-  color: #4990E2;
+  color: #4990e2;
 `
 
 const SiteName = styled.span`
@@ -87,8 +87,13 @@ export const BookmarkSummary = ({
   <LinkedContainer href={url}>
     {image && <Thumbnail src={image} />}
     <Content>
-      <Title>{title}</Title>
-      {site && <SiteName>{site}</SiteName>}
+      <Title>
+        {title}
+      </Title>
+      {site &&
+        <SiteName>
+          {site}
+        </SiteName>}
       {description &&
         <Description
           dangerouslySetInnerHTML={{ __html: marked(description) }}

@@ -5,7 +5,8 @@ export const FormActions = styled.div`
   flex-direction: row;
   grid-column: 2 / 3;
 
-  button, input[type="submit"] {
+  button,
+  input[type="submit"] {
     margin-left: 1rem;
 
     &:first-child {
@@ -16,7 +17,8 @@ export const FormActions = styled.div`
   @media (max-width: 32rem) {
     flex-direction: column-reverse;
 
-    button, input[type="submit"] {
+    button,
+    input[type="submit"] {
       margin-left: 0;
       margin-bottom: 1rem;
 
