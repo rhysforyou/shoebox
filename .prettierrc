@@ -1,0 +1,10 @@
+printWidth: 80
+singleQuote: true
+semi: false
+
+overrides:
+- files:
+  - "*.test.js"
+  - "**/__tests__/*.js"
+  options:
+    printWidth: 120
