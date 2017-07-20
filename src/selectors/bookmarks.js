@@ -12,36 +12,36 @@ export const bookmarkIdPropSelector = (
   props: { bookmarkId: string }
 ): string => props.bookmarkId
 
-export const allBookmarksSelector = (state: State) =>
-  state.lists.allBookmarks.toJS()
+export const allBookmarksSelector = (state: State): string[] =>
+  state.lists.allBookmarks.toArray()
 
-export const selectedBookmarkSelector = createSelector(
+export const bookmarkSelector = createSelector(
   bookmarksEntitiesSelector,
   bookmarkIdPropSelector,
   (bookmarkEntities, bookmarkId): ?Bookmark => bookmarkEntities.get(bookmarkId)
 )
 
-export const selectedBookmarkSiteSelector = createSelector(
-  selectedBookmarkSelector,
+export const bookmarkSiteSelector = createSelector(
+  bookmarkSelector,
   (bookmark): ?string => (bookmark ? bookmark.site : null)
 )
 
-export const selectedBookmarkTitleSelector = createSelector(
-  selectedBookmarkSelector,
+export const bookmarkTitleSelector = createSelector(
+  bookmarkSelector,
   (bookmark): string => (bookmark ? bookmark.title : '')
 )
 
-export const selectedBookmarkDescriptionSelector = createSelector(
-  selectedBookmarkSelector,
+export const bookmarkDescriptionSelector = createSelector(
+  bookmarkSelector,
   (bookmark): ?string => (bookmark ? bookmark.description : null)
 )
 
-export const selectedBookmarkURLSelector = createSelector(
-  selectedBookmarkSelector,
+export const bookmarkURLSelector = createSelector(
+  bookmarkSelector,
   (bookmark): string => (bookmark ? bookmark.url : '#')
 )
 
-export const selectedBookmarkImageSelector = createSelector(
-  selectedBookmarkSelector,
+export const bookmarkImageSelector = createSelector(
+  bookmarkSelector,
   (bookmark): ?string => (bookmark ? bookmark.image : null)
 )
