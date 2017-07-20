@@ -2,7 +2,7 @@
 
 exports[`Storyshots BookmarkSummary with Markdown content 1`] = `
 <a
-  className="sc-iwsKbI Wzhbg"
+  className="sc-iwsKbI kIdqmU"
   href="https://facebook.github.io/react"
 >
   <img
@@ -13,7 +13,7 @@ exports[`Storyshots BookmarkSummary with Markdown content 1`] = `
     className="sc-gZMcBi crAViM"
   >
     <h2
-      className="sc-gqjmRU kdrkId"
+      className="sc-gqjmRU ivatZR"
     >
       An Example Bookmark
     </h2>
@@ -49,7 +49,7 @@ exports[`Storyshots BookmarkSummary with Markdown content 1`] = `
 
 exports[`Storyshots BookmarkSummary with image 1`] = `
 <a
-  className="sc-iwsKbI Wzhbg"
+  className="sc-iwsKbI kIdqmU"
   href="https://facebook.github.io/react"
 >
   <img
@@ -60,7 +60,7 @@ exports[`Storyshots BookmarkSummary with image 1`] = `
     className="sc-gZMcBi crAViM"
   >
     <h2
-      className="sc-gqjmRU kdrkId"
+      className="sc-gqjmRU ivatZR"
     >
       An Example Bookmark
     </h2>
@@ -84,14 +84,14 @@ exports[`Storyshots BookmarkSummary with image 1`] = `
 
 exports[`Storyshots BookmarkSummary with just a title 1`] = `
 <a
-  className="sc-iwsKbI Wzhbg"
+  className="sc-iwsKbI kIdqmU"
   href="https://facebook.github.io/react"
 >
   <div
     className="sc-gZMcBi crAViM"
   >
     <h2
-      className="sc-gqjmRU kdrkId"
+      className="sc-gqjmRU ivatZR"
     >
       An Example Bookmark
     </h2>
@@ -101,14 +101,14 @@ exports[`Storyshots BookmarkSummary with just a title 1`] = `
 
 exports[`Storyshots BookmarkSummary without image 1`] = `
 <a
-  className="sc-iwsKbI Wzhbg"
+  className="sc-iwsKbI kIdqmU"
   href="https://facebook.github.io/react"
 >
   <div
     className="sc-gZMcBi crAViM"
   >
     <h2
-      className="sc-gqjmRU kdrkId"
+      className="sc-gqjmRU ivatZR"
     >
       An Example Bookmark
     </h2>
@@ -132,7 +132,7 @@ exports[`Storyshots BookmarkSummary without image 1`] = `
 
 exports[`Storyshots Button with the block style 1`] = `
 <button
-  className="sc-bxivhb bRjMOY"
+  className="sc-bxivhb gIegWz"
   onClick={[Function]}
 >
   Button
@@ -141,7 +141,7 @@ exports[`Storyshots Button with the block style 1`] = `
 
 exports[`Storyshots Button with the default style 1`] = `
 <button
-  className="sc-bxivhb ckxcZb"
+  className="sc-bxivhb iypFXW"
   onClick={[Function]}
 >
   Button
@@ -150,7 +150,7 @@ exports[`Storyshots Button with the default style 1`] = `
 
 exports[`Storyshots Button with the primary style 1`] = `
 <button
-  className="sc-bxivhb jIjOxN"
+  className="sc-bxivhb gnGqQJ"
   onClick={[Function]}
 >
   Button
@@ -202,10 +202,10 @@ exports[`Storyshots Form with the default appearance 1`] = `
     type="text"
   />
   <div
-    className="sc-gzVnrw foisEm"
+    className="sc-gzVnrw hkrjhh"
   >
     <button
-      className="sc-bxivhb ckxcZb"
+      className="sc-bxivhb iypFXW"
     >
       Cancel
     </button>
@@ -238,10 +238,11 @@ exports[`Storyshots Header with a child component 1`] = `
           📥
         </span>
       </span>
-       Shoebox
+       
+      Shoebox
     </a>
     <button
-      className="sc-bxivhb ckxcZb"
+      className="sc-bxivhb iypFXW"
       to="/add"
     >
       Add Bookmark
@@ -270,7 +271,8 @@ exports[`Storyshots Header with default content 1`] = `
           📥
         </span>
       </span>
-       Shoebox
+       
+      Shoebox
     </a>
   </header>
 </div>
